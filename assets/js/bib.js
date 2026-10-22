@@ -7,7 +7,7 @@
   "use strict";
 
   // Fields used only by the website; removed on export unless "keep site fields" is on.
-  const SITE_FIELDS = ["award", "selected", "pdf", "status", "summary", "slides", "code", "project", "topic", "image"];
+  const SITE_FIELDS = ["award", "selected", "pdf", "status", "summary", "slides", "code", "project", "topic", "image", "language"];
   const FIELD_ORDER = ["author", "editor", "title", "journal", "booktitle", "series", "year", "month",
     "volume", "number", "pages", "articleno", "publisher", "address", "school", "institution",
     "edition", "doi", "url", "isbn", "issn", "note", "keywords", "abstract"];
@@ -113,10 +113,11 @@
   const TO_LATEX = { "ä": '{\\"a}', "ö": '{\\"o}', "ü": '{\\"u}', "Ä": '{\\"A}', "Ö": '{\\"O}', "Ü": '{\\"U}', "ß": "{\\ss}",
     "é": "{\\'e}", "è": "{\\`e}", "ê": "{\\^e}", "á": "{\\'a}", "à": "{\\`a}", "â": "{\\^a}", "í": "{\\'i}", "ó": "{\\'o}", "ú": "{\\'u}",
     "ç": "{\\c{c}}", "ñ": "{\\~n}", "ł": "{\\l}", "ø": "{\\o}", "å": "{\\aa}", "ș": "{\\c{s}}", "ț": "{\\c{t}}", "ă": "{\\u{a}}",
-    "–": "--", "—": "---", "’": "'", "‘": "`", "“": "``", "”": "''" };
+    "–": "--", "—": "---", "’": "'", "‘": "`", "“": "``", "”": "''", "„": ",,", "…": "\\ldots{}" };
   function unicodeToLatex(s) {
-    return s.replace(/[äöüÄÖÜßéèêáàâíóúçñłøåșță–—‘’“”]/g, (c) => TO_LATEX[c] || c)
-            .replace(/(^|[^\\])&/g, "$1\\&");
+    return s.replace(/[äöüÄÖÜßéèêáàâíóúçñłøåșță–—‘’“”„…]/g, (c) => TO_LATEX[c] || c)
+            .replace(/(^|[^\\])&/g, "$1\\&")
+            .replace(/(^|[^\\])%/g, "$1\\%");
   }
 
   /* ---------------- authors ---------------- */
@@ -175,9 +176,9 @@
     const au = splitAuthors(f.author);
     const names = au.map((a) => `${a.last}, ${initials(a.first)}`);
     const authors = names.length > 1 ? names.slice(0, -1).join(", ") + ", & " + names[names.length - 1] : names[0] || "";
-    const year = f.year || (f.status ? f.status : "n.d.");
+    const year = f.status ? (f.status === "forthcoming" ? "forthcoming" : `${f.year ? f.year + ", " : ""}${f.status}`) : (f.year || "n.d.");
     const title = latexToText(f.title);
-    let venue = latexToText(f.journal || f.booktitle || f.publisher || f.school || "");
+    let venue = latexToText(f.journal || f.booktitle || f.publisher || f.school || f.institution || "");
     if (f.volume) venue += `, ${f.volume}`;
     if (f.number) venue += `(${f.number})`;
     if (f.pages) venue += `, ${latexToText(f.pages)}`;

@@ -44,7 +44,6 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ⬜ | `assets/img/service/wi-2017-appreciation.jpg` | service.html | WI 2017 appreciation for review and program management | Google Site: Service (photo 2) |
 | ⬜ | `assets/img/service/wint-2023-organizers.jpg` | service.html | WINT 2023 organizers group photo | Google Site: Service (photo 3) |
 | ⬜ | `assets/img/pubs/wambsganss2025argumentation.png` | index.html | thumbnail for wambsganss2025argumentation | Google Site: Publications (selected-paper tiles) |
-| ⬜ | `assets/img/pubs/tolzin2024prompting.png` | index.html | thumbnail for tolzin2024prompting | Google Site: Publications (selected-paper tiles) |
 | ⬜ | `assets/img/pubs/schmitt2023voice.png` | index.html | thumbnail for schmitt2023voice | Google Site: Publications (selected-paper tiles) |
 | ⬜ | `assets/img/pubs/knote2021value.png` | index.html | thumbnail for knote2021value | Google Site: Publications (selected-paper tiles) |
 | ⬜ | `assets/img/pubs/janson2020ladders.png` | index.html | thumbnail for janson2020ladders | Google Site: Publications (selected-paper tiles) |
@@ -68,10 +67,6 @@ Search the page for `data-todo="…"`, set `href`, then remove the `todo-link` c
 | projects.html | Innosuisse project database entry |
 | projects.html | key publication (bib key) |
 | projects.html | project website |
-| projects.html | add schoebel2020preferences to publications.bib |
-| projects.html | add dickhaut2020codifying to publications.bib |
-| projects.html | add weinert2023cocreation to publications.bib |
-| projects.html | add ernst2016culture to publications.bib |
 | projects.html | GFF fellowship page |
 | projects.html | DFG GEPRIS entry |
 | projects.html | further press / podcast / TV coverage |
@@ -80,8 +75,6 @@ Search the page for `data-todo="…"`, set `href`, then remove the `todo-link` c
 | teaching.html | HSG courses.unisg.ch entry |
 | teaching.html | HSG courses.unisg.ch entry |
 | teaching.html | AOM PDW programme entries 2022–2024 |
-| teaching.html | add janson2017appropriation to publications.bib |
-| teaching.html | add lehmann2015flipping to publications.bib |
 | teaching.html | open Bachelor / Master thesis topics |
 | teaching.html | office hours / booking link |
 | awards.html | ICIS 2018 / WI 2021 reviewer recognition |

@@ -4,10 +4,8 @@ Static academic website for **Dr. Andreas Janson**, replacing
 `sites.google.com/view/jansonandreas`. No build step, no framework:
 plain HTML/CSS/JS that runs on GitHub Pages as-is.
 
-> **Status: DRAFT (structure + UI).** 12 representative publications are imported;
-> everything still to fill in is marked with a yellow `TODO` tag on the page.
-> `data/scholar.json` holds **sample numbers** (shown with a "sample data" badge)
-> until the sync workflow runs for the first time.
+> **Status: draft content.** All 174 publications from the Google Site are imported;
+> remaining gaps are marked with a yellow `TODO` tag or a dashed placeholder on the page.
 
 ## Structure
 
@@ -111,6 +109,11 @@ path and it replaces the placeholder automatically; no HTML edit needed.
 - `<figure class="media video" data-yt="VIDEO_ID">` click-to-play YouTube (youtube-nocookie)
 - `<a class="todo-link" href="#" data-todo="what goes here">` marked placeholder link; clicking shows what is missing
 - Home-page paper thumbnails: `assets/img/pubs/<bibkey>.png`, or `image = {path}` in the .bib
+
+**Uploading pictures.** Either send them to Claude (any filenames; they get matched, resized and pushed),
+or upload them yourself on github.com: open the target folder, e.g. `assets/img/service/`, then
+**Add file → Upload files**, using the exact filename from MEDIA.md. The *Optimize images* workflow then
+resizes them and strips camera/GPS metadata automatically (`scripts/optimize_images.py`).
 
 `python scripts/check_media.py --write` regenerates **MEDIA.md**, a checklist of every
 missing file (with the Google Site page it comes from) and every placeholder link.

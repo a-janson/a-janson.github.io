@@ -11,10 +11,29 @@
 
   const norm = (s) => B.latexToText(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
+  // Scholar titles often differ slightly from the published ones (subtitle,
+  // punctuation, a word). Exact match first, then the best word-overlap match.
   function citeMap(scholar) {
-    const m = new Map();
-    if (scholar && Array.isArray(scholar.publications)) scholar.publications.forEach((p) => m.set(norm(p.title), p.citations));
-    return m;
+    const exact = new Map();
+    const pubs = (scholar && Array.isArray(scholar.publications)) ? scholar.publications : [];
+    const toks = pubs.map((p) => { const n = norm(p.title); exact.set(n, p.citations); return { set: new Set(n.split(" ")), c: p.citations }; });
+    const memo = new Map();
+    return {
+      get(n) {
+        if (exact.has(n)) return exact.get(n);
+        if (memo.has(n)) return memo.get(n);
+        const a = new Set(n.split(" "));
+        let best = 0, val;
+        toks.forEach((t) => {
+          let inter = 0; a.forEach((w) => { if (t.set.has(w)) inter++; });
+          const j = inter / (a.size + t.set.size - inter);
+          if (j > best) { best = j; val = t.c; }
+        });
+        const res = best >= 0.82 ? val : undefined;
+        memo.set(n, res);
+        return res;
+      },
+    };
   }
 
   function authorsHTML(e) {
@@ -25,7 +44,8 @@
   }
   function venueHTML(e) {
     const f = e.fields;
-    const v = B.latexToText(f.journal || f.booktitle || f.publisher || f.school || "");
+    let v = B.latexToText(f.journal || f.booktitle || f.publisher || f.school || f.institution || "");
+    if (f.type && f.institution) v = `${B.latexToText(f.type)}, ${v}`;
     let tail = [];
     if (f.volume) tail.push(`Vol. ${B.esc(f.volume)}${f.number ? ` (${B.esc(f.number)})` : ""}`);
     if (f.pages) tail.push(B.esc(B.latexToText(f.pages)));
@@ -54,7 +74,7 @@
         <div class="pub-meta">
           ${awards.map((a) => `<span class="tag award">★ ${B.esc(a)}</span>`).join("")}
           ${f.status ? `<span class="tag status">${B.esc(f.status)}</span>` : ""}
-          ${cites != null ? `<span class="tag cites" title="Google Scholar citations">❝ ${S.fmt(cites)}</span>` : ""}
+          ${cites > 0 ? `<span class="tag cites" title="Google Scholar citations">❝ ${S.fmt(cites)}</span>` : ""}
           <button class="act" type="button" data-act="bib" aria-expanded="false" aria-controls="bib-${B.esc(e.key)}">{ } BibTeX</button>
           ${f.doi ? `<a class="act" href="https://doi.org/${B.esc(f.doi)}" target="_blank" rel="noopener">doi ↗</a>` : ""}
           ${f.pdf ? `<a class="act" href="${B.esc(f.pdf)}" target="_blank" rel="noopener">pdf ↗</a>` : ""}
@@ -123,7 +143,7 @@
       [...state.basket].forEach((k) => { if (!byKey.has(k)) state.basket.delete(k); });
       const years = [...new Set(list.map((e) => e.fields.year).filter(Boolean))].sort((a, b) => b - a);
       const counts = list.reduce((m, e) => { const id = B.category(e).id; m[id] = (m[id] || 0) + 1; return m; }, {});
-      const hay = new Map(list.map((e) => [e.key, norm([e.fields.title, e.fields.author, e.fields.journal, e.fields.booktitle, e.fields.topic, e.fields.year, e.fields.award, e.key].join(" "))]));
+      const hay = new Map(list.map((e) => [e.key, norm([e.fields.title, e.fields.author, e.fields.journal, e.fields.booktitle, e.fields.institution, e.fields.publisher, e.fields.topic, e.fields.project, e.fields.year, e.fields.award, e.fields.status, e.fields.note, e.key].join(" "))]));
 
       // toolbar
       const types = [["all", "All", list.length], ["journal", "Journal"], ["conference", "Conference"], ["chapter", "Chapter"], ["book", "Book"], ["other", "Other"]]
@@ -140,13 +160,13 @@
         let out = list.filter((e) => {
           if (state.type !== "all" && B.category(e).id !== state.type) return false;
           if (state.awards && !e.fields.award) return false;
-          if (state.from && +(e.fields.year || 0) < +state.from) return false;
+          if (state.from && !e.fields.status && +(e.fields.year || 0) < +state.from) return false;
           const h = hay.get(e.key);
           return words.every((w) => h.includes(w));
         });
         if (state.sort === "cites") out.sort((a, b) => (cites.get(norm(b.fields.title)) || 0) - (cites.get(norm(a.fields.title)) || 0));
         else if (state.sort === "title") out.sort((a, b) => B.latexToText(a.fields.title).localeCompare(B.latexToText(b.fields.title)));
-        else out.sort((a, b) => (+b.fields.year || 9999) - (+a.fields.year || 9999) || (a.fields.status ? -1 : 1));
+        else out.sort((a, b) => (b.fields.status ? 1 : 0) - (a.fields.status ? 1 : 0) || (+b.fields.year || 9999) - (+a.fields.year || 9999) || a.key.localeCompare(b.key));
         return out;
       }
       function render() {
@@ -156,7 +176,7 @@
           listEl.innerHTML = `<p class="todo-block">No entries match <b>${B.esc(state.q || "these filters")}</b>. Clear the search or pick another type.</p>`;
         } else if (state.sort === "year") {
           const groups = new Map();
-          out.forEach((e) => { const y = e.fields.status && /forth/i.test(e.fields.status) ? "Forthcoming" : (e.fields.year || "n.d."); if (!groups.has(y)) groups.set(y, []); groups.get(y).push(e); });
+          out.forEach((e) => { const y = e.fields.status ? "In press" : (e.fields.year || "n.d."); if (!groups.has(y)) groups.set(y, []); groups.get(y).push(e); });
           listEl.innerHTML = [...groups].map(([y, es]) => `<section class="year-group" aria-label="${y}"><div class="year-label">${y}</div><ul class="pubs">${es.map((e) => entryHTML(e, ctx)).join("")}</ul></section>`).join("");
         } else {
           listEl.innerHTML = `<ul class="pubs">${out.map((e) => entryHTML(e, ctx)).join("")}</ul>`;
