@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publications · Andreas Janson</title>
+<meta name="description" content="Publications of Andreas Janson with one-click BibTeX export.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="app" data-page="publications">
+
+  <section style="display:flex;flex-direction:column;gap:0">
+    <h1 class="page-title"><span class="path">~/janson/publications.bib</span>Publications</h1>
+    <p class="lead">Journal articles, conference papers, chapters and books. Every entry exports as BibTeX: open one entry, or tick several into the basket and download a single <span class="mono">.bib</span> file.</p>
+
+    <div class="toolbar" role="search" style="margin-top:24px">
+      <label class="search" for="pub-q"><span class="ps">grep</span>
+        <input id="pub-q" type="search" placeholder="title, co-author, venue, topic, year…" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="filters">
+        <div class="seg" id="type-seg" role="group" aria-label="Publication type"></div>
+        <button class="btn sm" type="button" id="awards-only" aria-pressed="false">★ awards</button>
+        <label class="sr" for="year-from" hidden>From year</label>
+        <select class="sel" id="year-from" aria-label="From year"></select>
+        <select class="sel" id="sort" aria-label="Sort by">
+          <option value="year">sort: year</option>
+          <option value="cites">sort: citations</option>
+          <option value="title">sort: title</option>
+        </select>
+        <span class="grow"></span>
+        <button class="btn sm" type="button" id="export-visible">⤓ Export shown</button>
+        <button class="btn sm ghost" type="button" id="export-all">all .bib</button>
+      </div>
+      <div class="result-line" id="result-line" aria-live="polite">loading…</div>
+    </div>
+
+    <div id="pub-root">
+      <div id="pub-list"><p class="muted mono" style="padding-top:20px">parsing publications.bib…</p></div>
+    </div>
+
+    <div class="todo-block" style="margin-top:32px">
+      <b>DRAFT</b> · 12 of ~150 entries imported. The rest of the Google Site list goes into <b>data/publications.bib</b>; the page, filters, counts and exports update automatically.
+    </div>
+  </section>
+
+  <!-- citation basket -->
+  <button class="btn primary basket-fab" type="button" id="basket-fab" hidden>{ } basket <span class="n">0</span></button>
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="BibTeX export">
+    <div class="drawer-head">
+      <b id="drawer-title">Citation basket</b><span class="muted" id="drawer-count" style="font-size:.78rem"></span>
+      <span class="grow"></span>
+      <button class="btn sm" type="button" id="drawer-close" aria-label="Close">esc ✕</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+    <div class="drawer-foot">
+      <label class="opt"><input type="checkbox" id="opt-latex"> ASCII-safe: escape umlauts as LaTeX (classic bibtex)</label>
+      <label class="opt"><input type="checkbox" id="opt-site"> keep website fields (award, summary, pdf…)</label>
+      <pre class="code" id="drawer-preview" style="max-height:180px;border:1px solid var(--line);border-radius:6px;background:var(--bg)"></pre>
+      <div class="row">
+        <button class="btn primary" type="button" id="d-dl">⤓ Download .bib</button>
+        <button class="btn" type="button" id="d-copy">Copy BibTeX</button>
+        <button class="btn" type="button" id="d-txt">Copy as text</button>
+        <button class="btn ghost" type="button" id="d-clear">Clear basket</button>
+      </div>
+    </div>
+  </aside>
+
+</div>
+<script src="assets/js/bib.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/publications.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "sample": true,
+  "_note": "SAMPLE DATA for the draft UI. Overwritten automatically by .github/workflows/update-scholar.yml (scripts/fetch_scholar.py). Delete the 'sample' key once real data is in.",
+  "source": "google_scholar",
+  "author_id": "9XM_AuIAAAAJ",
+  "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
+  "updated": "2026-10-19T03:17:00Z",
+  "since_year": 2021,
+  "citations": { "all": 5000, "since": 3800 },
+  "h_index": { "all": 35, "since": 30 },
+  "i10_index": { "all": 90, "since": 75 },
+  "cites_per_year": {
+    "2014": 20, "2015": 45, "2016": 80, "2017": 130, "2018": 190, "2019": 260,
+    "2020": 340, "2021": 450, "2022": 600, "2023": 720, "2024": 800, "2025": 780, "2026": 500
+  },
+  "publications": [
+    { "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs", "year": 2020, "citations": 300 },
+    { "title": "Value Co-Creation in Smart Services: A Functional Affordances Perspective on Smart Personal Assistants", "year": 2021, "citations": 200 },
+    { "title": "Ladders for learning: is scaffolding the key to teaching problem-solving in technology-mediated learning contexts?", "year": 2020, "citations": 100 },
+    { "title": "The role of AI-based artifacts' voice capabilities for agency attribution", "year": 2023, "citations": 50 },
+    { "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification", "year": 2023, "citations": 40 }
+  ],
+  "openalex": null
+}

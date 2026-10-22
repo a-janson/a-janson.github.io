@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404 · Andreas Janson</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<main class="content" style="min-height:80vh;justify-content:center">
+  <p class="mono muted">~/janson $ cat <span id="p"></span></p>
+  <h1 class="hero-name">404<span class="dot">.</span></h1>
+  <p class="mono">cat: no such file or directory</p>
+  <p><a class="btn primary" href="/">cd ~</a> <a class="btn" href="/publications.html">open publications.bib</a></p>
+</main>
+<script>document.getElementById("p").textContent = location.pathname;</script>
+</body>
+</html>
