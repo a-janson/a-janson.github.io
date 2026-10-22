@@ -13,12 +13,15 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ⬜ | `assets/img/portrait.jpg` | index.html | Portrait of Andreas Janson | Google Site: Home (header photo) |
 | ✅ | `youtube:tqzPkWVXzMo` | projects.html | HSG Impact Award 2026: Swiss Circular Economy of Skills and Competencies | Google Site: Projects & Grants / Awards (embedded YouTube) |
 | ⬜ | `assets/img/projects/snsf.png` | projects.html | SNSF logo |  |
+| ⬜ | `assets/img/projects/hsg-gff.png` | projects.html | University of St.Gallen Basic Research Fund |  |
+| ⬜ | `assets/img/projects/hans-riegel.png` | projects.html | Dr. Hans Riegel-Stiftung logo |  |
+| ⬜ | `assets/img/projects/lift.png` | projects.html | LIFT project logo |  |
+| ⬜ | `assets/img/projects/komp-hi.png` | projects.html | Komp-HI project logo |  |
+| ⬜ | `assets/img/projects/uks-digi.png` | projects.html | UKS_digi project logo |  |
 | ⬜ | `assets/img/projects/nudger.png` | projects.html | nudger project logo | Google Site: Projects & Grants (nudger tile) |
 | ⬜ | `assets/img/projects/aneka.png` | projects.html | AnEkA project logo | Google Site: Projects & Grants (AnEkA tile) |
 | ⬜ | `assets/img/projects/kolearn.png` | projects.html | KoLeArn project logo | Google Site: Projects & Grants (KoLeArn tile) |
 | ⬜ | `assets/img/projects/kultig.png` | projects.html | kuLtig project logo | Google Site: Projects & Grants (kuLtig tile) |
-| ⬜ | `assets/img/projects/hsg-gff.png` | projects.html | HSG Basic Research Fund |  |
-| ⬜ | `assets/img/projects/dfg.png` | projects.html | DFG logo |  |
 | ⬜ | `assets/img/fieldwork/china-01.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-02.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-03.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
@@ -55,37 +58,14 @@ Search the page for `data-todo="…"`, set `href`, then remove the `todo-link` c
 
 | page | link needed |
 |---|---|
-| index.html | PolyU department / host page |
-| index.html | USF Muma College / host page |
-| index.html | Bentley host page |
-| index.html | GSU Institute for Insight page |
 | index.html | talk title / slides |
 | index.html | talk title / slides |
 | index.html | talk title / slides |
 | index.html | symposium page |
-| projects.html | SCESC project website |
-| projects.html | Innosuisse project database entry |
-| projects.html | key publication (bib key) |
-| projects.html | project website |
-| projects.html | GFF fellowship page |
-| projects.html | DFG GEPRIS entry |
 | projects.html | further press / podcast / TV coverage |
-| teaching.html | LLukas certificate / programme page |
-| teaching.html | Kassel course catalogue entry |
-| teaching.html | HSG courses.unisg.ch entry |
-| teaching.html | HSG courses.unisg.ch entry |
-| teaching.html | AOM PDW programme entries 2022–2024 |
 | teaching.html | open Bachelor / Master thesis topics |
 | teaching.html | office hours / booking link |
-| awards.html | ICIS 2018 / WI 2021 reviewer recognition |
 | awards.html | AISD award announcement |
 | awards.html | AISD award announcement |
-| awards.html | AOM JFC 2022 programme |
-| awards.html | AOM JFC 2019 programme |
 | awards.html | certificate / announcement |
 | awards.html | certificate / announcement |
-| service.html | ICIS AE track / years |
-| service.html | ECIS AE track / years |
-| service.html | WI AE track / years |
-| service.html | AOM AE years |
-| service.html | Netzwerk Verbraucherforschung page |

@@ -24,9 +24,9 @@
       <h1 class="hero-name" id="name">Andreas Janson<span class="dot">.</span></h1>
       <span class="line"><span class="ps">~/janson $</span> <span class="cmd">cat roles.txt</span></span>
       <ul class="roles">
-        <li><span class="k">postdoc</span>        <span class="at">@</span> University of St.Gallen · IWI-HSG</li>
-        <li><span class="k">acting_professor</span> <span class="at">@</span> University of Hamburg · WISTS</li>
-        <li><span class="k">lecturer</span>       <span class="at">@</span> University of Kassel · ITeG</li>
+        <li><span class="k">deputy_professor</span>    <span class="at">@</span> University of Hamburg · WISTS</li>
+        <li><span class="k">research_group_lead</span> <span class="at">@</span> University of St.Gallen · IWI-HSG</li>
+        <li><span class="k">lecturer</span>            <span class="at">@</span> University of Kassel · ITeG</li>
       </ul>
       <span class="line"><span class="ps">~/janson $</span> <span class="cursor" aria-hidden="true"></span></span>
     </div>
@@ -47,7 +47,7 @@
     <div class="structs">
       <div class="struct">
         <span class="t">struct</span> <span class="n">HSG</span> {<br>
-        &nbsp;&nbsp;<span class="f">role</span>: <span class="s">"Postdoctoral Researcher"</span>,<br>
+        &nbsp;&nbsp;<span class="f">role</span>: <span class="s">"Research Group Lead (part-time)"</span>,<br>
         &nbsp;&nbsp;<span class="f">unit</span>: <span class="s">"Institute of Information Systems and Digital Business"</span>,<br>
         &nbsp;&nbsp;<span class="f">site</span>: <a href="https://iwi.unisg.ch/" target="_blank" rel="noopener">iwi.unisg.ch</a>,<br>
         &nbsp;&nbsp;<span class="f">mail</span>: <button class="copy-mail" type="button" data-u="andreas.janson" data-d="unisg.ch">andreas [dot] janson [at] unisg.ch</button><br>
@@ -55,7 +55,7 @@
       </div>
       <div class="struct">
         <span class="t">struct</span> <span class="n">UHH</span> {<br>
-        &nbsp;&nbsp;<span class="f">role</span>: <span class="s">"Head of Working Group, Acting Professor"</span>,<br>
+        &nbsp;&nbsp;<span class="f">role</span>: <span class="s">"Deputy Professor (W2), Head of Working Group"</span>,<br>
         &nbsp;&nbsp;<span class="f">unit</span>: <span class="s">"Information Systems, Socio-Technical System Design (WISTS)"</span>,<br>
         &nbsp;&nbsp;<span class="f">site</span>: <a href="https://www.inf.uni-hamburg.de/inst/ab/wists/home.html" target="_blank" rel="noopener">inf.uni-hamburg.de</a>,<br>
         &nbsp;&nbsp;<span class="f">mail</span>: <button class="copy-mail" type="button" data-u="andreas.janson" data-d="uni-hamburg.de">andreas [dot] janson [at] uni-hamburg.de</button><br>
@@ -76,11 +76,14 @@
   <section aria-labelledby="h-about">
     <h2 class="sec-h" id="h-about"><span class="hash">##</span> about</h2>
     <div class="prose">
-      <p>Andreas Janson is a Postdoctoral Researcher at the Institute of Information Systems and Digital Business (IWI-HSG), University of St.Gallen, where he leads projects funded by the SNSF and Innosuisse. He is also Head of Working Group and Acting Professor for Information Systems, Socio-Technical System Design (WISTS) at the University of Hamburg. He received his PhD in Information Systems from the University of Kassel with highest distinction (summa cum laude).</p>
-      <p>His research studies how digital services are understood and designed across domains, including digital learning, gamification and digital nudging. His work appears in journals such as ISR, JAIS, JIT, EJIS, ISJ, AMLE, Computers &amp; Education and Computers in Human Behavior, and at ICIS, ECIS, DESRIST, HICSS and WI.</p>
-      <p><span class="todo">TODO</span> Shorten or extend: the full bio from the Google Site (service, teaching, awards paragraphs) is now split across the sub-pages.</p>
+      <p>Andreas Janson is Deputy Professor (W2) for Information Systems, Socio-Technical Systems Design (WISTS) at the Department of Informatics, University of Hamburg, and leads a research group at the Institute of Information Systems and Digital Business (IWI-HSG), University of St.Gallen. He is also a lecturer and guest researcher at the Research Center for Information System Design (ITeG), University of Kassel, where he received his PhD in Information Systems with highest distinction (summa cum laude).</p>
+      <p>His research studies how digital services are understood and designed across domains, including digital learning, gamification and digital nudging. His work appears in journals such as ISR, JAIS, JIT, EJIS, ISJ, AMLE, Computers &amp; Education and Computers in Human Behavior, and at ICIS, ECIS, DESRIST, HICSS and WI. He has led and co-authored projects funded by the SNSF, Innosuisse, the DFG and the BMBF.</p>
+      <p>His current work is design-oriented and theory-informed research on secure, lawful and sovereign information systems: compliance and privacy by design, calibrated trust in AI-based systems, and digital sovereignty in platform ecosystems and enterprise AI transformation.</p>
     </div>
     <div class="chips" style="margin-top:18px" aria-label="Research interests">
+      <span class="chip">privacy-by-design</span>
+      <span class="chip">trust-in-ai</span>
+      <span class="chip">digital-sovereignty</span>
       <span class="chip">digital-services</span>
       <span class="chip">value-co-creation</span>
       <span class="chip">digital-learning</span>
@@ -107,12 +110,19 @@
   <section aria-labelledby="h-cv">
     <h2 class="sec-h" id="h-cv"><span class="hash">##</span> git log --cv <span class="count">newest first</span></h2>
     <ol class="gitlog">
-      <li class="head"><span class="node"></span><span class="hash">2026-04</span><span class="msg"><span class="ref">HEAD</span><span class="type">feat(uhh):</span> Head of Working Group and Acting Professor, WISTS, University of Hamburg<small>Department of Informatics · part-time</small></span></li>
-      <li><span class="node"></span><span class="hash">2020-10</span><span class="msg"><span class="type">feat(hsg):</span> Postdoctoral Researcher and Project Manager, IWI-HSG<small>International Postdoctoral Fellow, Basic Research Fund HSG, 2020 – 2023</small></span></li>
-      <li><span class="node"></span><span class="hash">2018-11</span><span class="msg"><span class="type">feat(kassel):</span> Postdoc and Project Manager, University of Kassel and ITeG<small>external lecturer and guest researcher since Oct 2020</small></span></li>
-      <li><span class="node"></span><span class="hash">2019</span><span class="msg"><span class="type">docs(phd):</span> Dr. rer. pol., summa cum laude, University of Kassel<small>dissertation on scaffolding in technology-mediated learning, kassel university press · TODO confirm defence date</small></span></li>
-      <li><span class="node"></span><span class="hash">2013-06</span><span class="msg"><span class="type">init:</span> Researcher and PhD student, University of Kassel and ITeG</span></li>
-      <li><span class="node"></span><span class="hash">≤ 2013</span><span class="msg"><span class="type">chore(edu):</span> M.A. Communication Management and Dialog Marketing; Diploma in Economics, University of Kassel<small>industry: B. Braun Melsungen AG, SMA AG</small></span></li>
+      <li class="head"><span class="node"></span><span class="hash">2026-04</span><span class="msg"><span class="ref">HEAD</span><span class="type">feat(uhh):</span> Deputy Professor (W2) for Information Systems, Socio-Technical Systems Design, University of Hamburg<small>Department of Informatics, Faculty of Mathematics, Informatics and Natural Sciences</small></span></li>
+      <li><span class="node"></span><span class="hash">2026-04</span><span class="msg"><span class="type">feat(hsg):</span> Research Group Lead, IWI-HSG, University of St.Gallen<small>part-time</small></span></li>
+      <li><span class="node"></span><span class="hash">2024-04</span><span class="msg"><span class="type">feat(snsf):</span> Principal investigator, SNSF Spark project “Managing the Algorithm”<small>prompt engineering as an emerging business skill · until Mar 2025</small></span></li>
+      <li><span class="node"></span><span class="hash">2023-10</span><span class="msg"><span class="type">feat(innosuisse):</span> Flagship host, Swiss Circular Economy of Skills and Competences<small>Innosuisse flagship · HSG Impact Award 2026</small></span></li>
+      <li><span class="node"></span><span class="hash">2020-10</span><span class="msg"><span class="type">feat(hsg):</span> International Postdoctoral Fellow (GFF-IPF), IWI-HSG<small>Basic Research Fund HSG, hosted by Prof. Dr. Walter Brenner · 2020 – 2023 · then postdoc in the SNSF project on trust in smart personal assistants</small></span></li>
+      <li><span class="node"></span><span class="hash">2020-10</span><span class="msg"><span class="type">feat(kassel):</span> Lecturer and guest researcher, ITeG, University of Kassel<small>teaching the undergraduate course Wirtschaftsinformatik</small></span></li>
+      <li><span class="node"></span><span class="hash">2018</span><span class="msg"><span class="type">feat(kassel):</span> Postdoc and project leader, Information Systems Dept. and ITeG, University of Kassel<small>BMBF projects nudger and KoLeArn, chair of Prof. Dr. Jan Marco Leimeister · until 2020</small></span></li>
+      <li><span class="node"></span><span class="hash">2018</span><span class="msg"><span class="type">docs(phd):</span> Dr. rer. pol. in Information Systems, summa cum laude, University of Kassel<small>scaffolding in technology-mediated learning · referees Prof. Dr. Jan Marco Leimeister and Prof. Dr. Ali Sunyaev · <a href="publications.html#janson2019dissertation">published 2019</a></small></span></li>
+      <li><span class="node"></span><span class="hash">2017</span><span class="msg"><span class="type">chore(industry):</span> Scientific Advisory Board, Lyncronize GmbH<small>since 2017</small></span></li>
+      <li><span class="node"></span><span class="hash">2015</span><span class="msg"><span class="type">feat(hsg):</span> Affiliated research associate, IWI-HSG, University of St.Gallen<small>2015 – 2020</small></span></li>
+      <li><span class="node"></span><span class="hash">2013</span><span class="msg"><span class="type">init:</span> Research associate and PhD student, Information Systems Dept. and ITeG, University of Kassel<small>project kuLtig: culture-sensitive learning services</small></span></li>
+      <li><span class="node"></span><span class="hash">2011</span><span class="msg"><span class="type">chore(edu):</span> M.A. Communication Management and Interactive Marketing, University of Kassel<small>thesis on mobile loyalty programs and trust · graduate student assistant, Information Systems Dept. · until 2013</small></span></li>
+      <li><span class="node"></span><span class="hash">2005</span><span class="msg"><span class="type">chore(edu):</span> Dipl.-Oec. Business Economics, University of Kassel<small>accounting, taxes and controlling; marketing and international management · internships at B. Braun Melsungen AG and SMA Solar Technology AG · until 2011</small></span></li>
     </ol>
   </section>
 
@@ -120,10 +130,10 @@
   <section aria-labelledby="h-visits">
     <h2 class="sec-h" id="h-visits"><span class="hash">##</span> research visits <span class="count">host · invited by</span></h2>
     <ul class="log">
-      <li><span class="yr">2025</span><span class="lvl honor">HK</span><span class="txt">The Hong Kong Polytechnic University, Dept. of Management and Marketing (Prof. Chee-Wee Tan) <a class="todo-link" href="#" data-todo="PolyU department / host page">host</a></span></li>
-      <li><span class="yr">2022</span><span class="lvl honor">USA</span><span class="txt">University of South Florida, Muma College of Business (Profs. Alan Hevner and Gert-Jan de Vreede) <a class="todo-link" href="#" data-todo="USF Muma College / host page">host</a></span></li>
-      <li><span class="yr">2019</span><span class="lvl honor">USA</span><span class="txt">Bentley University, McCallum Graduate School of Business (Prof. Jane Fedorowicz) <a class="todo-link" href="#" data-todo="Bentley host page">host</a></span></li>
-      <li><span class="yr">2017</span><span class="lvl honor">USA</span><span class="txt">Georgia State University, J. Mack Robinson College of Business (Assoc. Prof. Abhay Mishra) <a class="todo-link" href="#" data-todo="GSU Institute for Insight page">host</a></span></li>
+      <li><span class="yr">2025</span><span class="lvl honor">HK</span><span class="txt">March · <a href="https://www.polyu.edu.hk/mm/" target="_blank" rel="noopener">The Hong Kong Polytechnic University, Dept. of Management and Marketing ↗</a> (Prof. Chee-Wee Tan)</span></li>
+      <li><span class="yr">2022</span><span class="lvl honor">USA</span><span class="txt">June · <a href="https://www.usf.edu/business/" target="_blank" rel="noopener">University of South Florida, Muma College of Business ↗</a> (Profs. Alan Hevner and Gert-Jan de Vreede)</span></li>
+      <li><span class="yr">2019</span><span class="lvl honor">USA</span><span class="txt">August · <a href="https://www.bentley.edu/" target="_blank" rel="noopener">Bentley University, McCallum Graduate School of Business ↗</a> (Prof. Jane Fedorowicz)</span></li>
+      <li><span class="yr">2017</span><span class="lvl honor">USA</span><span class="txt">July – September · <a href="https://robinson.gsu.edu/" target="_blank" rel="noopener">Georgia State University, J. Mack Robinson College of Business ↗</a> (Assoc. Prof. Abhay Mishra)</span></li>
     </ul>
   </section>
 
