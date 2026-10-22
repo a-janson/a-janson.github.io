@@ -115,7 +115,7 @@
     <div class="shell">
       <aside class="sidebar" id="sidebar" aria-label="Site navigation">
         <div class="side-head"><span class="side-label">Explorer</span><kbd>⌘K</kbd></div>
-        <a class="brand" href="index.html"><b>Andreas Janson</b><span>Information Systems · HSG / UHH / Kassel</span></a>
+        <a class="brand" href="index.html"><b>Andreas Janson</b><span>Information Systems · University of St.Gallen</span></a>
         <ul class="tree">
           <li class="folder" aria-hidden="true">▾ ~/janson</li>
           ${tree}
