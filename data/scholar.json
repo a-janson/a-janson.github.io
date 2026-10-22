@@ -1,24 +1,1109 @@
 {
-  "sample": true,
-  "_note": "SAMPLE DATA for the draft UI. Overwritten automatically by .github/workflows/update-scholar.yml (scripts/fetch_scholar.py). Delete the 'sample' key once real data is in.",
-  "source": "google_scholar",
+  "source": "google_scholar (serpapi)",
   "author_id": "9XM_AuIAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
-  "updated": "2026-10-19T03:17:00Z",
+  "updated": "2026-10-22T13:05:31Z",
   "since_year": 2021,
-  "citations": { "all": 5000, "since": 3800 },
-  "h_index": { "all": 35, "since": 30 },
-  "i10_index": { "all": 90, "since": 75 },
+  "citations": {
+    "all": 5340,
+    "since": 4795
+  },
+  "h_index": {
+    "all": 35,
+    "since": 33
+  },
+  "i10_index": {
+    "all": 79,
+    "since": 70
+  },
   "cites_per_year": {
-    "2014": 20, "2015": 45, "2016": 80, "2017": 130, "2018": 190, "2019": 260,
-    "2020": 340, "2021": 450, "2022": 600, "2023": 720, "2024": 800, "2025": 780, "2026": 500
+    "2015": 40,
+    "2016": 32,
+    "2017": 52,
+    "2018": 73,
+    "2019": 96,
+    "2020": 198,
+    "2021": 275,
+    "2022": 477,
+    "2023": 621,
+    "2024": 834,
+    "2025": 1219,
+    "2026": 1322
   },
   "publications": [
-    { "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs", "year": 2020, "citations": 300 },
-    { "title": "Value Co-Creation in Smart Services: A Functional Affordances Perspective on Smart Personal Assistants", "year": 2021, "citations": 200 },
-    { "title": "Ladders for learning: is scaffolding the key to teaching problem-solving in technology-mediated learning contexts?", "year": 2020, "citations": 100 },
-    { "title": "The role of AI-based artifacts' voice capabilities for agency attribution", "year": 2023, "citations": 50 },
-    { "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification", "year": 2023, "citations": 40 }
+    {
+      "title": "AI literacy and its implications for prompt engineering strategies",
+      "year": 2024,
+      "citations": 844
+    },
+    {
+      "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs",
+      "year": 2020,
+      "citations": 304
+    },
+    {
+      "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification",
+      "year": 2023,
+      "citations": 277
+    },
+    {
+      "title": "Charting the evolution and future of conversational agents: A research agenda along five waves and new frontiers",
+      "year": 2024,
+      "citations": 215
+    },
+    {
+      "title": "Value co-creation in smart services: a functional affordances perspective on smart personal assistants",
+      "year": 2021,
+      "citations": 200
+    },
+    {
+      "title": "Two decades of game concepts in digital learning environments–A bibliometric study and research agenda",
+      "year": 2021,
+      "citations": 176
+    },
+    {
+      "title": "Classifying smart personal assistants: an empirical cluster analysis",
+      "year": 2019,
+      "citations": 153
+    },
+    {
+      "title": "Female by default?–exploring the effect of voice assistant gender and pitch on trait and trust attribution",
+      "year": 2021,
+      "citations": 152
+    },
+    {
+      "title": "Ladders for learning: is scaffolding the key to teaching problem-solving in technology-mediated learning contexts?",
+      "year": 2020,
+      "citations": 148
+    },
+    {
+      "title": "What do you mean? A review on recovery strategies to overcome conversational breakdowns of conversational agents",
+      "year": 2021,
+      "citations": 124
+    },
+    {
+      "title": "Understanding the design elements affecting user acceptance of intelligent agents: Past, present and future",
+      "year": 2022,
+      "citations": 118
+    },
+    {
+      "title": "A research agenda for the why, what, and how of gamification designs: Outcomes of an ECIS 2019 panel",
+      "year": 2020,
+      "citations": 117
+    },
+    {
+      "title": "Enhancing argumentative writing with automated feedback and social comparison nudging",
+      "year": 2022,
+      "citations": 112
+    },
+    {
+      "title": "The what and how of smart personal assistants: principles and application domains for IS research",
+      "year": 2018,
+      "citations": 108
+    },
+    {
+      "title": "Process is king: Evaluating the performance of technology-mediated learning in vocational software training",
+      "year": 2018,
+      "citations": 93
+    },
+    {
+      "title": "Gamifying online training in management education to support emotional engagement and problem-solving skills",
+      "year": 2023,
+      "citations": 81
+    },
+    {
+      "title": "Individual appropriation of learning management systems—antecedents and consequences",
+      "year": 2017,
+      "citations": 73
+    },
+    {
+      "title": "A review of the empirical literature on conversational agents and future research directions",
+      "year": 2020,
+      "citations": 68
+    },
+    {
+      "title": "Towards a trust reliance paradox? exploring the gap between perceived trust in and reliance on algorithmic advice",
+      "year": 2021,
+      "citations": 65
+    },
+    {
+      "title": "Lawfulness by design–development and evaluation of lawful design patterns to consider legal requirements",
+      "year": 2024,
+      "citations": 62
+    },
+    {
+      "title": "Improving students’ argumentation skills using dynamic machine-learning–based modeling",
+      "year": 2025,
+      "citations": 58
+    },
+    {
+      "title": "Adaptive and personalized gamification designs: Call for action and future research",
+      "year": 2021,
+      "citations": 58
+    },
+    {
+      "title": "How data analytics competencies can foster business value–A systematic review and way forward",
+      "year": 2021,
+      "citations": 54
+    },
+    {
+      "title": "The anatomy of user experience with conversational agents: a taxonomy and propositions of service clues",
+      "year": 2020,
+      "citations": 54
+    },
+    {
+      "title": "Voice as a contemporary frontier of interaction design",
+      "year": 2021,
+      "citations": 52
+    },
+    {
+      "title": "Is it all about having fun?-Developing a taxonomy to gamify information systems",
+      "year": 2018,
+      "citations": 51
+    },
+    {
+      "title": "Flipping the Classroom–IT-unterstützte Lerneraktivierung zur Verbesserung des Lernerfolges einer universitären Massenlehrveranstaltung",
+      "year": 2015,
+      "citations": 50
+    },
+    {
+      "title": "How to achieve ethical persuasive design: A review and theoretical propositions for information systems",
+      "year": 2022,
+      "citations": 49
+    },
+    {
+      "title": "Towards a holistic understanding of technology mediated learning services–a state-of-the-art analysis",
+      "year": 2014,
+      "citations": 47
+    },
+    {
+      "title": "How digital nudges influence consumers-experimental investigation in the context of retargeting",
+      "year": 2018,
+      "citations": 44
+    },
+    {
+      "title": "A configurational view on avatar design–the role of emotional attachment, satisfaction, and cognitive load in digital learning",
+      "year": 2019,
+      "citations": 42
+    },
+    {
+      "title": "The role of AI-based artifacts’ voice capabilities for agency attribution",
+      "year": 2023,
+      "citations": 40
+    },
+    {
+      "title": "Level-up your learning–Introducing a framework for gamified educational conversational agents",
+      "year": 2022,
+      "citations": 39
+    },
+    {
+      "title": "Understanding user preferences of digital privacy nudges–a best-worst scaling approach",
+      "year": 2020,
+      "citations": 38
+    },
+    {
+      "title": "It's about understanding each other's culture–improving the outcomes of mobile learning by avoiding culture conflicts",
+      "year": 2016,
+      "citations": 36
+    },
+    {
+      "title": "Designing a Co-creation System for the Development of Work-process-related Learning Material in Manufacturing: Co-Creation of work-process-related learning material",
+      "year": 2023,
+      "citations": 34
+    },
+    {
+      "title": "Designing for Digital Wellbeing on a Smartphone: Co-creation of Digital Nudges to Mitigate Instagram Overuse",
+      "year": 2023,
+      "citations": 34
+    },
+    {
+      "title": "The influence of AI-based chatbots and their design on users’ trust and information sharing in online loan applications",
+      "year": 2021,
+      "citations": 34
+    },
+    {
+      "title": "Vocational training with microlearning—how low-immersive 360-degree learning environments support work-process-integrated learning",
+      "year": 2022,
+      "citations": 33
+    },
+    {
+      "title": "Flipping the IS classroom–Theory-driven design for large-scale lectures",
+      "year": 2014,
+      "citations": 32
+    },
+    {
+      "title": "Promoting students’ motivation in language education with gamified pedagogical conversational agents",
+      "year": 2025,
+      "citations": 31
+    },
+    {
+      "title": "Mechanisms of Common Ground in Human-Agent Interaction: A Systematic Review of Conversational Agent Research",
+      "year": 2023,
+      "citations": 31
+    },
+    {
+      "title": "Improving students argumentation learning with adaptive self-evaluation nudging",
+      "year": 2022,
+      "citations": 31
+    },
+    {
+      "title": "Redesigning university large scale lectures: How to activate the learner",
+      "year": 2015,
+      "citations": 30
+    },
+    {
+      "title": "Examining the effect of different measurements of learning success in technology-mediated learning research",
+      "year": 2014,
+      "citations": 29
+    },
+    {
+      "title": "Unterstützung digitaler Bildungsprozesse durch interaktive gamifizierte Lernvideos–Wie innovative Lernvideos Motivation und Lernerfolg steigern können",
+      "year": 2021,
+      "citations": 26
+    },
+    {
+      "title": "Leveraging Prompting Guides as Worked Examples for Advanced Prompt Engineering Strategies",
+      "year": 2024,
+      "citations": 25
+    },
+    {
+      "title": "Exploring the state-of-the-art of persuasive design for smart personal assistants",
+      "year": 2021,
+      "citations": 25
+    },
+    {
+      "title": "The dark side of privacy nudging–an experimental study in the context of a digital work environment",
+      "year": 2021,
+      "citations": 25
+    },
+    {
+      "title": "Der Weg zur effizienten Bereitstellung kultursensitiver Dienstleistungen–erste Schritte mittels systematischer Modularisierung",
+      "year": 2014,
+      "citations": 25
+    },
+    {
+      "title": "Designing pedagogical conversational agents for achieving common ground",
+      "year": 2023,
+      "citations": 24
+    },
+    {
+      "title": "Codifying interdisciplinary design knowledge through patterns–the case of smart personal assistants",
+      "year": 2020,
+      "citations": 24
+    },
+    {
+      "title": "How customers trust mobile marketing applications",
+      "year": 2013,
+      "citations": 22
+    },
+    {
+      "title": "Designing for Conversational System Trustworthiness: The Impact of Model Transparency on Trust and Task Performance",
+      "year": 2022,
+      "citations": 21
+    },
+    {
+      "title": "Special issue editorial: Adaptive and intelligent gamification design",
+      "year": 2023,
+      "citations": 20
+    },
+    {
+      "title": "Creating awareness and reflection in a large-scale IS lecture-the application of a peer assessment in a flipped classroom scenario.",
+      "year": 2014,
+      "citations": 20
+    },
+    {
+      "title": "Uncovering the mechanisms of common ground in human–agent interaction: review and future directions for conversational agent research",
+      "year": 2026,
+      "citations": 19
+    },
+    {
+      "title": "Engaging students through interactive learning videos in higher education: developing a creation process and design patterns for interactive learning videos",
+      "year": 2024,
+      "citations": 19
+    },
+    {
+      "title": "DELEN–a process model for the systematic development of legitimate digital nudges",
+      "year": 2021,
+      "citations": 19
+    },
+    {
+      "title": "It is only for your own good, or is it? Ethical Considerations for Designing Ethically Conscious Persuasive Information Systems",
+      "year": 2021,
+      "citations": 18
+    },
+    {
+      "title": "'I Will Follow You!'–How Recommendation Modality Impacts Processing Fluency and Purchase Intention",
+      "year": 2022,
+      "citations": 17
+    },
+    {
+      "title": "Gamification of online training and its relation to engagement and problem-solving outcomes",
+      "year": 2019,
+      "citations": 17
+    },
+    {
+      "title": "Engaging the Appropriation of Technology-mediated Learning Services–A Theory-driven Design Approach",
+      "year": 2015,
+      "citations": 17
+    },
+    {
+      "title": "Engaging minds–how gamified chatbots can support and motivate learners in digital education",
+      "year": 2024,
+      "citations": 16
+    },
+    {
+      "title": "The role of design patterns in the development and legal assessment of lawful technologies.",
+      "year": 2022,
+      "citations": 16
+    },
+    {
+      "title": "Understanding the Effects of Gamified Feedback in Mobile Learning “An Experimental Investigation",
+      "year": 2018,
+      "citations": 15
+    },
+    {
+      "title": "How to gamify a mobile learning application–a modularization approach",
+      "year": 2017,
+      "citations": 15
+    },
+    {
+      "title": "Worked Examples to Facilitate the Development of Prompt Engineering Skills",
+      "year": 2024,
+      "citations": 13
+    },
+    {
+      "title": "Common ground improves learning with conversational agents",
+      "year": 2026,
+      "citations": 12
+    },
+    {
+      "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
+      "year": 2024,
+      "citations": 11
+    },
+    {
+      "title": "Measuring university students’ ability to recognize argument structures and fallacies",
+      "year": 2023,
+      "citations": 11
+    },
+    {
+      "title": "Sharing Design Knowledge Through Codification in Interdisciplinary DSR Collaborations",
+      "year": 2023,
+      "citations": 11
+    },
+    {
+      "title": "Developing lawful technologies–a revelatory case study on design patterns",
+      "year": 2021,
+      "citations": 11
+    },
+    {
+      "title": "KoLeArn–Smarte und kontextsensitive Aus-und Weiterbildung für die chinesische Industrie",
+      "year": 2018,
+      "citations": 11
+    },
+    {
+      "title": "When in Rome, do as the Romans do-Overcoming Culture Conflicts in Mobile Learning",
+      "year": 2015,
+      "citations": 11
+    },
+    {
+      "title": "Making the default more legitimate–the role of autonomy and transparency for digital privacy nudges",
+      "year": 2026,
+      "citations": 10
+    },
+    {
+      "title": "Leveraging Learner Errors in Digital Argumentation Learning: How ALure Helps Students Learn from their Mistakes and Write Better Arguments",
+      "year": 2025,
+      "citations": 10
+    },
+    {
+      "title": "The Appropriation of Collaborative Learning--Qualitative Insights from a Flipped Classroom",
+      "year": 2016,
+      "citations": 10
+    },
+    {
+      "title": "Does culture matter? A qualitative and comparative study on eLearning in Germany and China",
+      "year": 2014,
+      "citations": 10
+    },
+    {
+      "title": "Disentangling the Influence of Mobile Learning Usability and Its Determinants–PLS-SEM and Importance-Performance Investigation",
+      "year": 2024,
+      "citations": 9
+    },
+    {
+      "title": "Understanding IT-Culture Conflicts to Drive Successful Technochange Projects–a Case Study",
+      "year": 2017,
+      "citations": 9
+    },
+    {
+      "title": "GenAI-infused service delivery: Micro-level augmentation patterns at the service frontline",
+      "year": 2026,
+      "citations": 8
+    },
+    {
+      "title": "An Explorative Diary Study of AI-Generated Podcasts in University Education: Benefits, Challenges, and Future Directions",
+      "year": 2025,
+      "citations": 8
+    },
+    {
+      "title": "Designing for cultural values: Towards a theory-motivated method for culture-sensitive adaptation of information systems",
+      "year": 2022,
+      "citations": 8
+    },
+    {
+      "title": "Individualisierung in der beruflichen Bildung durch Hybrid Intelligence. Potentiale und Grenzen",
+      "year": 2021,
+      "citations": 8
+    },
+    {
+      "title": "Co-Creation durch Peers im digitalen Lernen–Wie Plattformen und Chatbots die Partizipation bei der Lernmaterialerstellung begleiten können",
+      "year": 2020,
+      "citations": 8
+    },
+    {
+      "title": "Towards an integrative understanding of privacy nudging–systematic review and research Agenda",
+      "year": 2019,
+      "citations": 8
+    },
+    {
+      "title": "Ansatz zur Umsetzung von Datenschutz nach der DSGVO im Arbeitsumfeld: Datenschutz durch Nudging",
+      "year": 2019,
+      "citations": 8
+    },
+    {
+      "title": "Does culture matter",
+      "year": 2014,
+      "citations": 8
+    },
+    {
+      "title": "Die Simulationsstudie als Evaluationsmethode.",
+      "year": 2020,
+      "citations": 7
+    },
+    {
+      "title": "How Cultural Values Influence the Appropriation of Technology-Mediated Learning",
+      "year": 2016,
+      "citations": 7
+    },
+    {
+      "title": "Conceptualizing design knowledge in is research–a review and taxonomy of design knowledge properties",
+      "year": 2022,
+      "citations": 6
+    },
+    {
+      "title": "Mobiles Lernen in praktischen Trainings: Lernzielerreichung vor dem Hintergrund von Motivation und Akzeptanz der Zielgruppe",
+      "year": 2018,
+      "citations": 6
+    },
+    {
+      "title": "IT-Kulturkonflikttheorie und ihre Bedeutung für erfolgreiches Service Systems Engineering-Fallstudie eines Einführungsprojektes für mobile Lernanwendungen in China",
+      "year": 2016,
+      "citations": 6
+    },
+    {
+      "title": "Automotive Manufacturers and Their Stumble from one Supply Crisis to Another: Procurement Departments Could be the Game Changer by Using Data Analytics, but…",
+      "year": 2023,
+      "citations": 5
+    },
+    {
+      "title": "AI-based argumentation tutoring–A novel system class to improve learners’ argumentation skills",
+      "year": 2021,
+      "citations": 5
+    },
+    {
+      "title": "Wie können Systeme künstlicher Intelligenz ohne Qualitätsverlust rechtsverträglich gestaltet werden? Interdisziplinäre Lösungsansätze zur Gestaltung innovativer KI-Systeme",
+      "year": 2020,
+      "citations": 5
+    },
+    {
+      "title": "The impact of procedural scaffolding on mobile learning outcomes",
+      "year": 2017,
+      "citations": 5
+    },
+    {
+      "title": "Der Kunde im Fokus: Das Konzept der Customer Journey",
+      "year": 2012,
+      "citations": 5
+    },
+    {
+      "title": "Aktuelle Potenziale und Defizite des E-Learnings",
+      "year": 2003,
+      "citations": 5
+    },
+    {
+      "title": "Personalized Coaching for Lifestyle Behavior Change through Large Language Models: A Qualitative Study",
+      "year": 2025,
+      "citations": 4
+    },
+    {
+      "title": "The hidden value of patterns–using design patterns to whitebox technology development in legal assessments",
+      "year": 2021,
+      "citations": 4
+    },
+    {
+      "title": "Designing effective privacy nudges in digital environments: a design science research approach: research-in-progress",
+      "year": 2020,
+      "citations": 4
+    },
+    {
+      "title": "Die Kodifizierung von Gestaltungswissen in interdisziplinären Entwurfsmustern-Lösungen im Spannungsfeld zwischen Rechtsverträglichkeit und Dienstleistungsqualität",
+      "year": 2020,
+      "citations": 4
+    },
+    {
+      "title": "Interdisziplinäre Anforderungsmuster für smarte persönliche Assistenten-Mittel zu Erfassung divergenter Anforderungen aus Informatik und Recht",
+      "year": 2020,
+      "citations": 4
+    },
+    {
+      "title": "Determinanten und Effekte sinngetreuer Nutzung von Learning Management Systemen",
+      "year": 2015,
+      "citations": 4
+    },
+    {
+      "title": "Designing for Trust: Integrating Self-referencing in Large Language Model-Based Health Coaching",
+      "year": 2025,
+      "citations": 3
+    },
+    {
+      "title": "Let’s Play with AI! A 2x2 Experiment on Collaborative vs. Competitive Game Elements for Pedagogical Conversational Agents",
+      "year": 2024,
+      "citations": 3
+    },
+    {
+      "title": "Investigating Relevant Data in Automotive Procurement Departments: External Shocks as Transparency Creator for Data Deficits in Decision-Making",
+      "year": 2023,
+      "citations": 3
+    },
+    {
+      "title": "Design pattern as a bridge between problem-space and solution-space",
+      "year": 2022,
+      "citations": 3
+    },
+    {
+      "title": "How Conversational Agents Relieve Teams from Innovation Blockages",
+      "year": 2022,
+      "citations": 3
+    },
+    {
+      "title": "Alexa, are you still there? Understanding the habitual use of AI-based voice assistants",
+      "year": 2021,
+      "citations": 3
+    },
+    {
+      "title": "Handlungsbroschüre. Anforderungs-und Entwurfsmuster zur rechtsverträglichen und qualitätszentrierten Gestaltung kontextsensitiver Applikationen (AnEkA). Handlungsempfehlungen …",
+      "year": 2020,
+      "citations": 3
+    },
+    {
+      "title": "Towards a new methodology to capture the legal compatibility of conversational speech agents",
+      "year": 2020,
+      "citations": 3
+    },
+    {
+      "title": "Does Context Matter for Value Co-Creation in Smart Learning Services?",
+      "year": 2020,
+      "citations": 3
+    },
+    {
+      "title": "How Digital Nudges Influence Consumers–The Role of Social and Privacy Nudges in Retargeting",
+      "year": 2018,
+      "citations": 3
+    },
+    {
+      "title": "How technology-enhanced scaffolding contributes to problem-solving outcomes in management education",
+      "year": 2017,
+      "citations": 3
+    },
+    {
+      "title": "Do human trust models transfer to AI? a necessary condition analysis of interpersonal trust antecedents in large language model-based coaching",
+      "year": 2026,
+      "citations": 2
+    },
+    {
+      "title": "Mining Hidden Prompt Engineering Patterns with Formal Concept Analysis and Association Rules",
+      "year": 2026,
+      "citations": 2
+    },
+    {
+      "title": "Meetings at Digital Workplaces–An Experimental Approach to Analyze Group Attachment and Organizational Commitment in Digital Worlds",
+      "year": 2023,
+      "citations": 2
+    },
+    {
+      "title": "Analyzing Design Knowledge Representation in Design Science Research and Deriving Recommendations to Support Design Knowledge Codification",
+      "year": 2022,
+      "citations": 2
+    },
+    {
+      "title": "Artificial Intelligence in IS Research (pp. 281-352)",
+      "year": 2021,
+      "citations": 2
+    },
+    {
+      "title": "Aufbau und Ablauf des kuLtig-Projektes",
+      "year": 2020,
+      "citations": 2
+    },
+    {
+      "title": "Judging Alexa-Towards a New Methodology to Capture the Legal Compatibility of Conversational Speech Agents",
+      "year": 2020,
+      "citations": 2
+    },
+    {
+      "title": "Theoriegeleitete und nutzerzentrierte Entwicklung von digitalen Lernangeboten und Dienstleistungen. Berufsbildung International (Vol. Digitalisierung). DLR Projektträger",
+      "year": 2019,
+      "citations": 2
+    },
+    {
+      "title": "Gamified feedback durch avatare im mobile learning",
+      "year": 2019,
+      "citations": 2
+    },
+    {
+      "title": "Mobiles Lernen für China-eine iterative Prototypenentwicklung",
+      "year": 2017,
+      "citations": 2
+    },
+    {
+      "title": "Towards a holistic understanding of technology-mediated learning appropriation",
+      "year": 2015,
+      "citations": 2
+    },
+    {
+      "title": "The Efficient Provision of Culture-Sensitive Services: A Modularization Approach",
+      "year": 2015,
+      "citations": 2
+    },
+    {
+      "title": "Less is more or more is better? Comparing static and generative AI-based recovery for chatbot service breakdowns",
+      "year": 2025,
+      "citations": 1
+    },
+    {
+      "title": "Implementing Digital Responsibility through Information Systems Research: A Delphi Study of Objectives, Activities, and Challenges in IS Research",
+      "year": 2023,
+      "citations": 1
+    },
+    {
+      "title": "How Videoconferencing and its Affordances Transformed Teaching in Schools During COVID-19 Pandemic",
+      "year": 2023,
+      "citations": 1
+    },
+    {
+      "title": "Entwurfsmuster für die interdisziplinäre Gestaltung rechtsverträglicher Systeme",
+      "year": 2022,
+      "citations": 1
+    },
+    {
+      "title": "Can you help me scale? A Systematic Analysis of Scaling Capabilities of Conversational Agents for Digital Services",
+      "year": 2022,
+      "citations": 1
+    },
+    {
+      "title": "Data analytics for effective decision-making in crises-identifying relevant data analytics competencies for automotive procurement departments",
+      "year": 2022,
+      "citations": 1
+    },
+    {
+      "title": "Supporting Digital Education Processes Through Interactive Gamified Learning Videos—How Innovative Learning Videos can Increase Motivation and Learning Success",
+      "year": 2021,
+      "citations": 1
+    },
+    {
+      "title": "Legit methodology: towards capturing legal compatibility of design science artifacts",
+      "year": 2021,
+      "citations": 1
+    },
+    {
+      "title": "Mithilfe von Privacy Nudging zu rechtsverträglichen Videokonferenztools",
+      "year": 2021,
+      "citations": 1
+    },
+    {
+      "title": "Datenkompetenz durch edukatives Privacy Nudging: Zentrale Prinzipien und Effekte auf Lernprozesse",
+      "year": 2021,
+      "citations": 1
+    },
+    {
+      "title": "Der Ansatz von Mustern zur systematischen Steigerung der Rechtsverträglichkeit und Dienstleistungsqualität bei der Entwicklung soziotechnischer Systeme",
+      "year": 2020,
+      "citations": 1
+    },
+    {
+      "title": "Improving Processes and Outcomes in Digital Learning Environments: Empirical Foundations and Design Principles for Scaffolding in Technology-mediated Learning",
+      "year": 2020,
+      "citations": 1
+    },
+    {
+      "title": "Avatar Designs are in the Eye of the Beholder: About Identifying Preferred Avatar Designs in Digital Learning",
+      "year": 2018,
+      "citations": 1
+    },
+    {
+      "title": "Gamifying Information Systems-Improving Motivation and Effective Use Through a Theory-motivated Method",
+      "year": 2018,
+      "citations": 1
+    },
+    {
+      "title": "Nudging Privacy in Digital Work Systems. Towards the Development of a Desgin Theory",
+      "year": 2018,
+      "citations": 1
+    },
+    {
+      "title": "Kulturkonflikte vermeiden–Mobiles Lernen für China",
+      "year": 2015,
+      "citations": 1
+    },
+    {
+      "title": "Storytelling als Instrument des Behavioral Branding",
+      "year": 2012,
+      "citations": 1
+    },
+    {
+      "title": "Grundlagen und Potenziale des Web 2.0 im interaktiven Marketing",
+      "year": 2011,
+      "citations": 1
+    },
+    {
+      "title": "Data‐Driven Procurement for Managing Crises: Lessons From a European Automotive Manufacturer",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Cognitive and Motivational Factors of Argument Evaluation",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Fachliche und überfachliche Kompetenzen durch soziotechnisches Design von Systemen hybrider Intelligenz flexibel und individuell fördern; Projektergebnisse des Vorhabens Komp …",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Orchestrating Scaffolding AI Agents: Design Principles for Mechanism-Specific Learner Support",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Global Discourses: Divergent Construction of Digital Sovereignty",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Conceptualizing Collaborative Agentic Information Systems through Shared Cooperative Activity",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Unblackboxing AI Business Value: Application-Level AI Capability Building",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "Key Elements in Strategically Formulated Design Challenges for Value-Creating AI Innovation",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "When Trust Breaks: A Framework For Analyzing And Understanding Trust Violation And Repair In Sociotechnical Systems",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "The Anatomy Of A Design Challenge For Initiating AI Innovation",
+      "year": 2026,
+      "citations": 0
+    },
+    {
+      "title": "AI-Enabled Platforms: Exploring Strategic Value Creation through a Strategy-as-Practice Lens",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "AI Meets Management: Redefining Leadership and Managerial Roles in the New Era",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "Understanding AI’s impact on business value creation.",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "Symposium: AI Meets Management: Redefining Leadership and Managerial Roles in the New Era",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "Learning How to Manage the AI: Incorporating Generative AI into Management Learning and Education (PDW)",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "Disentangling Recipes for Knowledge Co-Creation Performance in Online Innovation Communities",
+      "year": 2025,
+      "citations": 0
+    },
+    {
+      "title": "AIS Electronic Library (AISeL)",
+      "year": 2024,
+      "citations": 0
+    },
+    {
+      "title": "The Promise of Evaluative Algorithmic Advice: A Field Experiment on Writing Improvement",
+      "year": 2024,
+      "citations": 0
+    },
+    {
+      "title": "Measuring students’ argumentation skills: validation of a test instrument",
+      "year": 2023,
+      "citations": 0
+    },
+    {
+      "title": "journals. sagepub. com/home/jme Research Article Gamifying Online Training in Management Education to Support",
+      "year": 2023,
+      "citations": 0
+    },
+    {
+      "title": "Disentangling Trust in Voice Assistants-A Configurational View on Conversational AI Ecosystems",
+      "year": 2023,
+      "citations": 0
+    },
+    {
+      "title": "Social Audio: Conceptualizing Voice-Based Online Social Networks and their Privacy Implications",
+      "year": 2023,
+      "citations": 0
+    },
+    {
+      "title": "Zum Datenschutz gestupst? Gestaltungsorientierte Entwicklung von Privacy Nudges vor dem Hintergrund ethischer und rechtlicher Leitlinien",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "It Takes Two to Tango: Design Thinking and Design Patterns for Better System Development",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "NUDGER: gemeinsamer Sach-und Schlussbericht für das Verbundprojekt Nudger: Projektlaufzeit: 01.09. 2018-31.12. 2021",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "Handlungsbroschüre. Systematisches Design digitaler Privacy Nudges–Handlungsempfehlungen zur Gestaltung von digitalen Privacy Nudges",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "Towards Conversational Co-Creation of Learning Content in Digital Higher Education",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "Exploring the Dynamics of Affordance Actualization–A Configurational View on Voice Assistants",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "Handlungsbroschüre. Ko-Kreative Entwicklung von Lernmaterialien im Arbeitsprozess in der Fertigungsindustrie–Eine anwenderzentrierte Betrachtung",
+      "year": 2022,
+      "citations": 0
+    },
+    {
+      "title": "Sach-und Schlussbericht für das Verbundprojekt KoLeArn: Projektlaufzeit: 01.10. 2017-30.06. 2021",
+      "year": 2021,
+      "citations": 0
+    },
+    {
+      "title": "Codifying Interdisciplinary Design Knowledge",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Die Simulationsstudie als Evaluationsmethode: Laura F. Thies, Ernestine Dickhaut, Andreas Janson, Alexander Roßnagel, Jan M. Leimeister, Matthias Söllner",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Interdisziplinäre Anforderungsmuster für smarte persönliche Assistenten: Ernestine Dickhaut, Andreas Janson, Alexander Roßnagel, Jan Marco Leimeister",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Die Kodifizierung von Gestaltungswissen in interdisziplinären Entwurfsmustern: Ernestine Dickhaut, Laura Friederike Thies, Andreas Janson",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Leitfaden für kultursensitives E-Learning: Entwicklung auf Basis qualitativer Interviews",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Mobile Kompetenzentwicklung am Beispiel der „MoKe “App",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Kulturelle Werte im Rahmen der Aneignung von IT-gestütztem Lernen",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Co-Creation by Peers in Digital Learning—How Platforms and Chatbots Accompany Participation in the Creation of Learning Materials",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Digitaler Wandel in der Arbeitswelt-Status Quo der Aus-und Weiterbildung in China",
+      "year": 2020,
+      "citations": 0
+    },
+    {
+      "title": "Designing for Social Presence and Leveraging the Outcomes of Customer Service Chatbots",
+      "year": 2019,
+      "citations": 0
+    },
+    {
+      "title": "Artificial Intelligence Literacy and Workforce Readiness in Emerging Economies",
+      "year": 2019,
+      "citations": 0
+    },
+    {
+      "title": "Nutzung von interaktiven Videos zur Entwicklung von Arbeitsprozessorientierung in der Aus-und Weiterbildung–Erkenntnisse aus dem Projekt KoLeArn",
+      "year": 2019,
+      "citations": 0
+    },
+    {
+      "title": "Kontinuierliche Verbesserung von internationalen Geschäftsmodellen in der Berufsbildung",
+      "year": 2019,
+      "citations": 0
+    },
+    {
+      "title": "Avatar Designs are in the Eye of the Beholder: About Identifying Preferred Avatar Designs in Digital Learning-Research in Progress",
+      "year": 2018,
+      "citations": 0
+    },
+    {
+      "title": "Sach-und Schlussbericht für das Verbundprojekt kuLtig: Teilprojekt: Erklärungsmodell und Bildungsdienstleistungsengineeringmethode: Projektlaufzeit: 01.07. 2013-30.06. 2016",
+      "year": 2016,
+      "citations": 0
+    },
+    {
+      "title": "The Impact of the Individual-Relating Cultural Differences to the Appropriation Process of Technology-mediated Learning Services",
+      "year": 2014,
+      "citations": 0
+    },
+    {
+      "title": "Focusing on the Customer: The Concept of the Customer Journey",
+      "year": 2014,
+      "citations": 0
+    },
+    {
+      "title": "AIS Electronic Library (AISeL)",
+      "year": 2011,
+      "citations": 0
+    },
+    {
+      "title": "Krisenkommunikation–unter besonderer Berücksichtigung von Rückrufaktionen im Automobilbereich",
+      "year": 2011,
+      "citations": 0
+    },
+    {
+      "title": "Interaktives Marketing und Web 2.0. Grundlagen und Potenziale",
+      "year": 2011,
+      "citations": 0
+    },
+    {
+      "title": "SCHWERPU NKT",
+      "year": 1917,
+      "citations": 0
+    },
+    {
+      "title": "DOI: This material is brought to you by the AIS Journals at AIS Electronic Library (AISeL). It has been accepted for inclusion in AIS Transactions on Human-Computer Interaction …",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "ITeG Technical Reports",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "ITeG Technical Reports",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "Designing a Co-creation System for the Development of Work-process-related Learning Material in Manufacturing Tim Weinert* 1, Matthias Billert1, Marian Thiel de Gafenco2",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "SCHWERPU NKT",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "ITeG Technical Reports Band 10 Herausgegeben vom Wissenschaftlichen Zentrum für Informationstechnik-Gestaltung (ITeG) an der Universität Kassel",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "Mithilfe von Privacy Nudging zu rechtsverträglichen",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "David, Geihs, Lange, Stumme (Hrsg.): INFORMATIK 2019, Lecture Notes in Informatics (LNI), Gesellschaft für Informatik, Bonn 2019 325 Ansatz zur Umsetzung von Datenschutz nach …",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "SPECIAL ISSUE ON DESIGNING TECHNOLOGIES TO SUPPORT PROFESSIONAL AND WORKPLACE LEARNING FOR SITUATED PRACTICE",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "Transactions on Human-Computer Interaction",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "C ommunications of the",
+      "year": null,
+      "citations": 0
+    },
+    {
+      "title": "Does culture matter? A qualitative and comparative study on eLearning in Germany and",
+      "year": null,
+      "citations": 0
+    }
   ],
-  "openalex": null
+  "openalex": {
+    "id": "https://openalex.org/A5083020821",
+    "cited_by_count": 2583,
+    "works_count": 215,
+    "h_index": 24,
+    "i10_index": 50,
+    "counts_by_year": {
+      "2013": 8,
+      "2014": 101,
+      "2015": 27,
+      "2016": 32,
+      "2017": 96,
+      "2018": 87,
+      "2019": 279,
+      "2020": 376,
+      "2021": 401,
+      "2022": 316,
+      "2023": 396,
+      "2024": 416,
+      "2025": 40,
+      "2026": 8
+    },
+    "fetched": "2026-10-22T13:05:31Z"
+  }
 }
