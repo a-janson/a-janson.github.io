@@ -517,3 +517,6 @@ table.courses td:nth-child(4) { font-family: var(--font-mono); font-size: .8rem;
 .crumbs a:hover, .tree .folder a:hover, .page-title .path a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .tree .folder a { display: inline; padding: 0; background: none; }
 .tree .folder a:hover { background: none; }
+
+/* real logos sit on white in both themes (dark logos such as LIFT vanish on the dark panel) */
+.media.logo.loaded .frame { background: #fff; }
