@@ -58,14 +58,4 @@ Search the page for `data-todo="…"`, set `href`, then remove the `todo-link` c
 
 | page | link needed |
 |---|---|
-| index.html | talk title / slides |
-| index.html | talk title / slides |
-| index.html | talk title / slides |
-| index.html | symposium page |
 | projects.html | further press / podcast / TV coverage |
-| teaching.html | open Bachelor / Master thesis topics |
-| teaching.html | office hours / booking link |
-| awards.html | AISD award announcement |
-| awards.html | AISD award announcement |
-| awards.html | certificate / announcement |
-| awards.html | certificate / announcement |
