@@ -23,12 +23,9 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ✅ | `assets/img/projects/aneka.png` | projects.html | AnEkA project logo | Google Site: Projects & Grants (AnEkA tile) |
 | ✅ | `assets/img/projects/kolearn.png` | projects.html | KoLeArn project logo | Google Site: Projects & Grants (KoLeArn tile) |
 | ✅ | `assets/img/projects/kultig.png` | projects.html | kuLtig project logo | Google Site: Projects & Grants (kuLtig tile) |
-| ⬜ | `assets/img/fieldwork/china-01.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/fieldwork/china-02.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/fieldwork/china-03.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/fieldwork/china-04.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/fieldwork/china-05.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/fieldwork/china-06.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
+| ✅ | `assets/img/fieldwork/china-01.jpg` | projects.html | kuLtig mobile learning app used on a car in vocational training |  |
+| ✅ | `assets/img/fieldwork/china-02.jpg` | projects.html | KoLeArn field study in clean-room production at B. Braun Suzhou |  |
+| ✅ | `assets/img/fieldwork/china-03.jpg` | projects.html | KoLeArn project team at B. Braun Suzhou |  |
 | ✅ | `assets/img/teaching/lecture-kassel-2014.jpg` | teaching.html | Lecture hall, Introduction to Business and Information Systems Engineering, University of Kassel | Google Site: Teaching (photo 1) |
 | ✅ | `assets/img/teaching/flipped-classroom-concept.png` | teaching.html | Flipped-classroom concept: two online phases followed by a flipped presence lecture | Google Site: Teaching (figure 2) |
 | ✅ | `assets/img/teaching/aom-pdw-2022.jpg` | teaching.html | AOM 2022 PDW on gamification in management education | Google Site: Teaching (photo 3) |
@@ -45,7 +42,7 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ✅ | `assets/img/badges/ejis-reviewer-2024.png` | awards.html | EJIS Outstanding Reviewer 2024 | Google Site: Service (badge 3) |
 | ✅ | `assets/img/badges/ejis-reviewer-2023.png` | awards.html | EJIS Outstanding Reviewer 2023 | Google Site: Service (badge 2) |
 | ✅ | `assets/img/badges/ais-distinguished-member.png` | awards.html | AIS Distinguished Member Cum Laude |  |
-| ⬜ | `assets/img/badges/ais-avp.png` | awards.html | AIS Associate Vice President credential |  |
+| ✅ | `assets/img/badges/ais-avp.png` | awards.html | AIS Associate Vice President credential |  |
 | ✅ | `assets/img/badges/desrist-2023-best-paper.png` | awards.html | DESRIST 2023 Best Paper Award |  |
 | ✅ | `assets/img/badges/icis-2020-best-theory.png` | awards.html | ICIS 2020 Best Theory Paper certificate |  |
 | ✅ | `assets/img/badges/hicss-2020-best-paper.png` | awards.html | HICSS 2020 Best Paper Award certificate |  |
@@ -53,7 +50,7 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ✅ | `assets/img/service/icis-2019-review-coordinators.jpg` | service.html | ICIS 2019 appreciation for review coordinators | Google Site: Service (photo 1) |
 | ✅ | `assets/img/service/wi-2017-appreciation.jpg` | service.html | WI 2017 appreciation for review and program management | Google Site: Service (photo 2) |
 | ✅ | `assets/img/service/wint-2023-organizers.jpg` | service.html | WINT 2023 organizers group photo | Google Site: Service (photo 3) |
-| ⬜ | `assets/img/pubs/wambsganss2025argumentation.png` | index.html | thumbnail for wambsganss2025argumentation | Google Site: Publications (selected-paper tiles) |
+| ✅ | `assets/img/pubs/wambsganss2025argumentation.png` | index.html | thumbnail for wambsganss2025argumentation | Google Site: Publications (selected-paper tiles) |
 | ✅ | `assets/img/pubs/schmitt2023voice.png` | index.html | thumbnail for schmitt2023voice | Google Site: Publications (selected-paper tiles) |
 | ✅ | `assets/img/pubs/knote2021value.png` | index.html | thumbnail for knote2021value | Google Site: Publications (selected-paper tiles) |
 | ✅ | `assets/img/pubs/janson2020ladders.png` | index.html | thumbnail for janson2020ladders | Google Site: Publications (selected-paper tiles) |
@@ -65,4 +62,3 @@ Search the page for `data-todo="…"`, set `href`, then remove the `todo-link` c
 
 | page | link needed |
 |---|---|
-| projects.html | further press / podcast / TV coverage |

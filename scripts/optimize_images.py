@@ -17,6 +17,7 @@ are pushed, so pictures uploaded through the GitHub website get the same treatme
 """
 from __future__ import annotations
 
+import io
 import sys
 from pathlib import Path
 
@@ -42,21 +43,25 @@ def process(path: Path, check: bool) -> str | None:
         too_big = max(im.size) > edge
         if before < SKIP_BELOW_BYTES and not too_big and not has_exif:
             return None
-        if check:
-            return f"would optimise {path.relative_to(ROOT)} ({before // 1024} KB, {im.size[0]}×{im.size[1]})"
         im = ImageOps.exif_transpose(im)
         if too_big:
             im.thumbnail((edge, edge), Image.LANCZOS)
         ext = path.suffix.lower()
+        buf = io.BytesIO()
         if ext in (".jpg", ".jpeg"):
-            im.convert("RGB").save(path, "JPEG", quality=82, optimize=True, progressive=True)
+            im.convert("RGB").save(buf, "JPEG", quality=82, optimize=True, progressive=True)
         elif ext == ".png":
-            im.save(path, "PNG", optimize=True)
+            im.save(buf, "PNG", optimize=True)
         else:
-            im.save(path, "WEBP", quality=82, method=6)
-    after = path.stat().st_size
-    if after > before and not too_big:
-        return f"kept {path.relative_to(ROOT)} (already optimal)"
+            im.save(buf, "WEBP", quality=82, method=6)
+    after = buf.tell()
+    # only rewrite when it matters: resized, metadata to strip, or ≥10% smaller.
+    # Re-encoding an already optimised JPEG on every run would slowly degrade it.
+    if not too_big and not has_exif and after > before * 0.9:
+        return None
+    if check:
+        return f"would optimise {path.relative_to(ROOT)} ({before // 1024} KB → {after // 1024} KB)"
+    path.write_bytes(buf.getvalue())
     return f"{path.relative_to(ROOT)}: {before // 1024} KB → {after // 1024} KB"
 
 
