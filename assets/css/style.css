@@ -498,3 +498,7 @@ table.courses td:nth-child(4) { font-family: var(--font-mono); font-size: .8rem;
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* awards: large centered hero photo above the award-moments row */
+.media.moment-hero { max-width: 880px; margin: 0 auto 20px; }
+.media.moment-hero figcaption { text-align: center; }
