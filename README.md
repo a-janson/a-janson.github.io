@@ -23,7 +23,7 @@ plain HTML/CSS/JS that runs on GitHub Pages as-is.
 │   ├── js/main.js        shell: explorer sidebar, tab bar, status bar, theme, ⌘K palette  ← edit NAV/PROFILES here
 │   ├── js/bib.js         dependency-free BibTeX parser / serializer / highlighter
 │   ├── js/publications.js publication list + export UI (also renders "selected" on home)
-│   ├── js/scholar.js     citation panel + live OpenAlex cross-check
+│   ├── js/scholar.js     citation panel
 │   └── img/              portrait.jpg etc. (add yourself)
 ├── data/
 │   ├── publications.bib  ← single source of truth for all publications
@@ -91,7 +91,6 @@ Google Scholar has no API and blocks most cloud IPs, so the pipeline is layered:
      to route it through ScraperAPI's free tier.
    - **OpenAlex** by ORCID — always fetched as a cross-check, and used as fallback numbers.
 3. A guard keeps the previous numbers if a scrape fails or looks broken (>50 % drop).
-4. The browser additionally queries OpenAlex live and shows it in the panel footer.
 
 Result: `data/scholar.json` (totals, h-index, i10, citations per year, per-paper counts).
 Per-paper counts are matched to `.bib` entries by normalised title and shown as ❝ badges;

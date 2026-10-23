@@ -1,6 +1,5 @@
 /* scholar.js — renders the citation panel on the home page.
-   Primary source : data/scholar.json (refreshed weekly by GitHub Actions)
-   Live cross-check: OpenAlex API by ORCID (free, CORS-enabled, no key)     */
+   Source: data/scholar.json (refreshed weekly by GitHub Actions)            */
 (function () {
   "use strict";
   const S = window.Site;
@@ -62,16 +61,7 @@
         ${s.sample ? `<span class="badge sample">sample data</span>` : `<span class="badge live">synced</span>`}
         <span>source: Google Scholar</span>
         <span>updated ${upd}</span>
-        <span id="openalex-line"></span>
         <a href="${s.profile_url}" target="_blank" rel="noopener" style="margin-left:auto">open profile ↗</a>
       </div>`;
-
-    // Live cross-check from OpenAlex (silently skipped if blocked/offline)
-    fetch(`https://api.openalex.org/authors/orcid:${S.SITE.orcid}`)
-      .then((r) => r.ok ? r.json() : Promise.reject())
-      .then((a) => {
-        const line = document.getElementById("openalex-line");
-        if (line && a && a.cited_by_count != null) line.textContent = `OpenAlex live: ${S.fmt(a.cited_by_count)} cites · h ${a.summary_stats ? a.summary_stats.h_index : "?"}`;
-      }).catch(() => {});
   });
 })();
