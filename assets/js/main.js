@@ -25,7 +25,7 @@
     { label: "DBLP", href: "https://dblp.org/pid/144/1213.html" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/andreasjanson/" },
     { label: "ResearchGate", href: "https://www.researchgate.net/profile/Andreas_Janson" },
-    { label: "HSG Alexandria", href: "https://www.alexandria.unisg.ch/persons/9028" },
+    { label: "HSG Alexandria", href: "https://alexandria.unisg.ch/entities/person/Andreas_Janson" },
   ];
 
   /* ---------------- storage (never required) ---------------- */
