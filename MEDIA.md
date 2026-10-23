@@ -10,7 +10,8 @@ Most images are on the old Google Site: open the page, right-click the image →
 
 | | file | page | what | source |
 |---|---|---|---|---|
-| ⬜ | `assets/img/portrait.jpg` | index.html | Portrait of Andreas Janson | Google Site: Home (header photo) |
+| ✅ | `assets/img/portrait.jpg` | index.html | Portrait of Andreas Janson | Google Site: Home (header photo) |
+| ✅ | `assets/img/projects/scesc-flagship.png` | projects.html | Swiss Circular Economy of Skills and Competencies: Innosuisse flagship partners |  |
 | ✅ | `youtube:tqzPkWVXzMo` | projects.html | HSG Impact Award 2026: Swiss Circular Economy of Skills and Competencies | Google Site: Projects & Grants / Awards (embedded YouTube) |
 | ⬜ | `assets/img/projects/snsf.png` | projects.html | SNSF logo |  |
 | ⬜ | `assets/img/projects/hsg-gff.png` | projects.html | University of St.Gallen Basic Research Fund |  |
@@ -18,39 +19,45 @@ Most images are on the old Google Site: open the page, right-click the image →
 | ⬜ | `assets/img/projects/lift.png` | projects.html | LIFT project logo |  |
 | ⬜ | `assets/img/projects/komp-hi.png` | projects.html | Komp-HI project logo |  |
 | ⬜ | `assets/img/projects/uks-digi.png` | projects.html | UKS_digi project logo |  |
-| ⬜ | `assets/img/projects/nudger.png` | projects.html | nudger project logo | Google Site: Projects & Grants (nudger tile) |
-| ⬜ | `assets/img/projects/aneka.png` | projects.html | AnEkA project logo | Google Site: Projects & Grants (AnEkA tile) |
-| ⬜ | `assets/img/projects/kolearn.png` | projects.html | KoLeArn project logo | Google Site: Projects & Grants (KoLeArn tile) |
-| ⬜ | `assets/img/projects/kultig.png` | projects.html | kuLtig project logo | Google Site: Projects & Grants (kuLtig tile) |
+| ✅ | `assets/img/projects/nudger.png` | projects.html | nudger project logo | Google Site: Projects & Grants (nudger tile) |
+| ✅ | `assets/img/projects/aneka.png` | projects.html | AnEkA project logo | Google Site: Projects & Grants (AnEkA tile) |
+| ✅ | `assets/img/projects/kolearn.png` | projects.html | KoLeArn project logo | Google Site: Projects & Grants (KoLeArn tile) |
+| ✅ | `assets/img/projects/kultig.png` | projects.html | kuLtig project logo | Google Site: Projects & Grants (kuLtig tile) |
 | ⬜ | `assets/img/fieldwork/china-01.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-02.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-03.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-04.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-05.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
 | ⬜ | `assets/img/fieldwork/china-06.jpg` | projects.html |  | Google Site: Projects & Grants (field-work carousel) |
-| ⬜ | `assets/img/teaching/lecture-kassel-2014.jpg` | teaching.html | Lecture hall, Introduction to Business and Information Systems Engineering, University of Kassel | Google Site: Teaching (photo 1) |
-| ⬜ | `assets/img/teaching/scaffolding-model.png` | teaching.html | Scaffolding model from the dissertation | Google Site: Teaching (figure 2) |
-| ⬜ | `assets/img/teaching/aom-pdw-2022.jpg` | teaching.html | AOM 2022 PDW on gamification in management education | Google Site: Teaching (photo 3) |
-| ⬜ | `assets/img/teaching/amle-2020.png` | teaching.html | Ladders for Learning | Google Site: Teaching (paper tile) |
-| ⬜ | `assets/img/teaching/thci-2017.png` | teaching.html | THCI 2017 paper | Google Site: Teaching (paper tile) |
-| ⬜ | `assets/img/teaching/dissertation-cover.jpg` | teaching.html | Dissertation cover | Google Site: Teaching (paper tile) |
-| ⬜ | `assets/img/teaching/hmd-2015.png` | teaching.html | HMD 2015 paper | Google Site: Teaching (paper tile) |
-| ⬜ | `assets/img/badges/ecis-2024-best-ae.png` | awards.html | ECIS 2024 Best Associate Editor badge | Google Site: Service (badge 1) |
-| ⬜ | `assets/img/badges/ejis-reviewer-2025.png` | awards.html | EJIS Outstanding Reviewer 2025 | Google Site: Service (badge 4) |
-| ⬜ | `assets/img/badges/ejis-reviewer-2024.png` | awards.html | EJIS Outstanding Reviewer 2024 | Google Site: Service (badge 3) |
-| ⬜ | `assets/img/badges/ejis-reviewer-2023.png` | awards.html | EJIS Outstanding Reviewer 2023 | Google Site: Service (badge 2) |
-| ⬜ | `assets/img/badges/ais-distinguished-member.png` | awards.html | AIS Distinguished Member Cum Laude |  |
+| ✅ | `assets/img/teaching/lecture-kassel-2014.jpg` | teaching.html | Lecture hall, Introduction to Business and Information Systems Engineering, University of Kassel | Google Site: Teaching (photo 1) |
+| ✅ | `assets/img/teaching/flipped-classroom-concept.png` | teaching.html | Flipped-classroom concept: two online phases followed by a flipped presence lecture | Google Site: Teaching (figure 2) |
+| ✅ | `assets/img/teaching/aom-pdw-2022.jpg` | teaching.html | AOM 2022 PDW on gamification in management education | Google Site: Teaching (photo 3) |
+| ✅ | `assets/img/teaching/amle-2020.png` | teaching.html | Ladders for Learning | Google Site: Teaching (paper tile) |
+| ✅ | `assets/img/teaching/thci-2017.png` | teaching.html | THCI 2017 paper | Google Site: Teaching (paper tile) |
+| ✅ | `assets/img/teaching/dissertation-cover.jpg` | teaching.html | Dissertation cover | Google Site: Teaching (paper tile) |
+| ✅ | `assets/img/teaching/hmd-2015.png` | teaching.html | HMD 2015 paper | Google Site: Teaching (paper tile) |
+| ✅ | `assets/img/badges/ecis-2024-best-ae.png` | awards.html | ECIS 2024 Best Associate Editor badge | Google Site: Service (badge 1) |
+| ✅ | `assets/img/badges/ejis-reviewer-2025.png` | awards.html | EJIS Outstanding Reviewer 2025 | Google Site: Service (badge 4) |
+| ✅ | `assets/img/badges/ejis-reviewer-2024.png` | awards.html | EJIS Outstanding Reviewer 2024 | Google Site: Service (badge 3) |
+| ✅ | `assets/img/badges/ejis-reviewer-2023.png` | awards.html | EJIS Outstanding Reviewer 2023 | Google Site: Service (badge 2) |
+| ✅ | `assets/img/badges/ais-distinguished-member.png` | awards.html | AIS Distinguished Member Cum Laude |  |
 | ⬜ | `assets/img/badges/ais-avp.png` | awards.html | AIS Associate Vice President credential |  |
-| ⬜ | `assets/img/badges/ais-education-award-2024.png` | awards.html | AIS Best Conference Paper on Education Award 2024 |  |
-| ⬜ | `assets/img/badges/desrist-2023-best-paper.png` | awards.html | DESRIST 2023 Best Paper Award |  |
-| ⬜ | `assets/img/service/icis-2019-review-coordinators.jpg` | service.html | ICIS 2019 appreciation for review coordinators | Google Site: Service (photo 1) |
-| ⬜ | `assets/img/service/wi-2017-appreciation.jpg` | service.html | WI 2017 appreciation for review and program management | Google Site: Service (photo 2) |
-| ⬜ | `assets/img/service/wint-2023-organizers.jpg` | service.html | WINT 2023 organizers group photo | Google Site: Service (photo 3) |
+| ✅ | `assets/img/badges/ais-education-award-2024.png` | awards.html | AIS Best Conference Paper on Education Award 2024 |  |
+| ✅ | `assets/img/badges/desrist-2023-best-paper.png` | awards.html | DESRIST 2023 Best Paper Award |  |
+| ✅ | `assets/img/badges/icis-2020-best-theory.png` | awards.html | ICIS 2020 Best Theory Paper certificate |  |
+| ✅ | `assets/img/badges/hicss-2020-best-paper.png` | awards.html | HICSS 2020 Best Paper Award certificate |  |
+| ✅ | `assets/img/badges/desrist-2020-cerf-award.png` | awards.html | DESRIST 2020 Vinton G. Cerf Award certificate |  |
+| ✅ | `assets/img/awards/hsg-impact-award-2026.jpg` | awards.html | HSG Impact Award 2026 ceremony |  |
+| ✅ | `assets/img/awards/hicss-2020-award-1.jpg` | awards.html | HICSS 2020 Best Paper Award |  |
+| ✅ | `assets/img/awards/hicss-2020-award-2.jpg` | awards.html | HICSS 2020 award reception |  |
+| ✅ | `assets/img/service/icis-2019-review-coordinators.jpg` | service.html | ICIS 2019 appreciation for review coordinators | Google Site: Service (photo 1) |
+| ✅ | `assets/img/service/wi-2017-appreciation.jpg` | service.html | WI 2017 appreciation for review and program management | Google Site: Service (photo 2) |
+| ✅ | `assets/img/service/wint-2023-organizers.jpg` | service.html | WINT 2023 organizers group photo | Google Site: Service (photo 3) |
 | ⬜ | `assets/img/pubs/wambsganss2025argumentation.png` | index.html | thumbnail for wambsganss2025argumentation | Google Site: Publications (selected-paper tiles) |
-| ⬜ | `assets/img/pubs/schmitt2023voice.png` | index.html | thumbnail for schmitt2023voice | Google Site: Publications (selected-paper tiles) |
-| ⬜ | `assets/img/pubs/knote2021value.png` | index.html | thumbnail for knote2021value | Google Site: Publications (selected-paper tiles) |
-| ⬜ | `assets/img/pubs/janson2020ladders.png` | index.html | thumbnail for janson2020ladders | Google Site: Publications (selected-paper tiles) |
-| ⬜ | `assets/img/pubs/schoebel2020gamification.png` | index.html | thumbnail for schoebel2020gamification | Google Site: Publications (selected-paper tiles) |
+| ✅ | `assets/img/pubs/schmitt2023voice.png` | index.html | thumbnail for schmitt2023voice | Google Site: Publications (selected-paper tiles) |
+| ✅ | `assets/img/pubs/knote2021value.png` | index.html | thumbnail for knote2021value | Google Site: Publications (selected-paper tiles) |
+| ✅ | `assets/img/pubs/janson2020ladders.png` | index.html | thumbnail for janson2020ladders | Google Site: Publications (selected-paper tiles) |
+| ✅ | `assets/img/pubs/schoebel2020gamification.png` | index.html | thumbnail for schoebel2020gamification | Google Site: Publications (selected-paper tiles) |
 
 ## Placeholder links
 

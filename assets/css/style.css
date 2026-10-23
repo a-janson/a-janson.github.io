@@ -398,6 +398,7 @@ select.sel { font: 500 .76rem var(--font-mono); background: var(--panel); color:
 .card-head .media.logo { max-width: 96px; }
 .pub.with-thumb { grid-template-columns: 28px minmax(0,1fr) 150px; }
 .pub .thumb { align-self: start; }
+.pub .thumb .frame img { position: absolute; inset: 0; object-fit: contain; padding: 4%; }
 
 /* placeholder links: <a class="act todo-link" href="#" data-todo="what goes here"> */
 .todo-link, .act.todo-link { color: var(--str) !important; border: 1px dashed color-mix(in srgb, var(--str) 55%, var(--line)) !important; background: transparent !important; cursor: help; }
