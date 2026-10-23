@@ -520,3 +520,5 @@ table.courses td:nth-child(4) { font-family: var(--font-mono); font-size: .8rem;
 
 /* real logos sit on white in both themes (dark logos such as LIFT vanish on the dark panel) */
 .media.logo.loaded .frame { background: #fff; }
+a.tag { text-decoration: none; }
+a.tag:hover { text-decoration: underline; text-underline-offset: 2px; }
