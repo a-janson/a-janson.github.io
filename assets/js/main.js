@@ -117,7 +117,7 @@
         <div class="side-head"><span class="side-label">Explorer</span><kbd>⌘K</kbd></div>
         <a class="brand" href="index.html"><b>Andreas Janson</b><span>Information Systems · University of St.Gallen</span></a>
         <ul class="tree">
-          <li class="folder" aria-hidden="true">▾ ~/janson</li>
+          <li class="folder"><a href="index.html" title="Back to home">▾ ~/janson</a></li>
           ${tree}
         </ul>
         <div class="side-sec"><span class="side-label">Profiles</span><ul class="side-links">${profiles}</ul></div>
@@ -130,7 +130,7 @@
         <header class="tabbar">
           <button class="btn sm menu-btn" type="button" id="menu-btn" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
           <div class="tab"><span class="ext ${page.ext}">${page.ext === "dir" ? "/" : "." + page.ext}</span>${page.file}${page.ext === "dir" ? "/" : "." + page.ext}</div>
-          <nav class="crumbs" aria-label="Breadcrumb"><span>janson</span><span>›</span><span style="color:var(--fg)">${page.title}</span></nav>
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" title="Back to home">janson</a><span>›</span><span style="color:var(--fg)">${page.title}</span></nav>
           <span class="spacer"></span>
           <button class="btn sm palette-btn" type="button" id="palette-btn"><span aria-hidden="true">⌕</span><span class="lbl">Search site</span><kbd>⌘K</kbd></button>
         </header>
