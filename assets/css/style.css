@@ -502,3 +502,12 @@ table.courses td:nth-child(4) { font-family: var(--font-mono); font-size: .8rem;
 /* awards: large centered hero photo above the award-moments row */
 .media.moment-hero { max-width: 880px; margin: 0 auto 20px; }
 .media.moment-hero figcaption { text-align: center; }
+
+/* monogram tile: fills a logo box when a project has no logo (data-mono on the figure) */
+.media.mono .frame { border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line)); background: color-mix(in srgb, var(--accent) 9%, var(--panel)); }
+.mono-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; width: 100%; height: 100%; padding: 6px; text-align: center; }
+.mono-tile b { font: 700 1.25rem/1 var(--font-mono); letter-spacing: -.02em; color: var(--accent); overflow-wrap: anywhere; }
+.mono-tile.long b { font-size: .86rem; }
+.mono-tile span { font: 400 .58rem/1.2 var(--font-mono); color: var(--muted); text-transform: lowercase; }
+.card-head .mono-tile b { font-size: 1.05rem; }
+.card-head .mono-tile.long b { font-size: .74rem; }

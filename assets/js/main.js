@@ -190,14 +190,22 @@
       const small = fig.classList.contains("logo");
       const label = src ? (small ? src.split("/").pop() : src) : `youtube.com/watch?v=${yt}`;
       const hint = fig.dataset.hint || (yt ? "video · click to play" : "drop this file in to replace the placeholder");
-      frame.innerHTML = `<div class="ph"><span class="ic" aria-hidden="true">${yt ? "▶" : "▣"}</span><code>${window.Bib ? window.Bib.esc(label) : label}</code>${small ? "" : `<span class="dim">${hint}</span>`}</div>`;
+      const esc = (t) => (window.Bib ? window.Bib.esc(t) : t);
+      if (fig.dataset.mono) {
+        // monogram tile for projects without a logo; a real file at data-src still replaces it
+        const m = fig.dataset.mono;
+        fig.classList.add("mono");
+        frame.innerHTML = `<div class="mono-tile${m.length > 5 ? " long" : ""}" aria-hidden="true"><b>${esc(m)}</b>${fig.dataset.monoSub ? `<span>${esc(fig.dataset.monoSub)}</span>` : ""}</div>`;
+      } else {
+        frame.innerHTML = `<div class="ph"><span class="ic" aria-hidden="true">${yt ? "▶" : "▣"}</span><code>${esc(label)}</code>${small ? "" : `<span class="dim">${hint}</span>`}</div>`;
+      }
       const addPlay = () => { if (yt && !frame.querySelector(".play")) frame.insertAdjacentHTML("beforeend", `<button class="play" type="button" tabindex="-1">▶ play</button>`); };
       const poster = src || (yt ? `https://i.ytimg.com/vi/${yt}/hqdefault.jpg` : "");
       if (poster) {
         const img = new Image();
         img.alt = fig.dataset.alt || "";
         img.decoding = "async";
-        img.onload = () => { frame.innerHTML = ""; frame.appendChild(img); fig.classList.add("loaded"); if (yt) addPlay(); };
+        img.onload = () => { frame.innerHTML = ""; frame.appendChild(img); fig.classList.remove("mono"); fig.classList.add("loaded"); if (yt) addPlay(); };
         img.src = poster;
       }
       if (yt) {
