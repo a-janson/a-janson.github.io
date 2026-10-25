@@ -522,3 +522,22 @@ table.courses td:nth-child(4) { font-family: var(--font-mono); font-size: .8rem;
 .media.logo.loaded .frame { background: #fff; }
 a.tag { text-decoration: none; }
 a.tag:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+/* dotfiles (.legal): hidden in the explorer until "ls -a" (press ".") */
+.tree .dotfile { display: none; }
+.show-hidden .tree .dotfile { display: block; }
+.tree .dotfile a { color: var(--muted); font-style: italic; }
+.ext.dot { color: var(--muted); border-style: dashed; }
+.statusbar .sb-legal { color: inherit; text-decoration: none; opacity: .8; }
+.statusbar .sb-legal:hover { opacity: 1; text-decoration: underline; text-underline-offset: 2px; }
+
+/* .legal page */
+.term { font: 400 var(--step--1)/1.7 var(--font-mono); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; overflow-wrap: anywhere; }
+.term .ps { color: var(--accent); }
+.term .dim { color: var(--muted); }
+.term .hl { color: var(--str); }
+.legal-prose h3 { font: 600 var(--step-0) var(--font-mono); margin: 22px 0 6px; }
+.legal-prose h3::before { content: "# "; color: var(--accent); }
+.legal-prose p, .legal-prose li { max-width: 72ch; }
+.statusbar .sb-legal { flex-shrink: 0; }
+.statusbar #sb-scholar { min-width: 0; overflow: hidden; text-overflow: ellipsis; display: block; }

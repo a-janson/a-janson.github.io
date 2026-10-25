@@ -18,7 +18,9 @@ plain HTML/CSS/JS that runs on GitHub Pages as-is.
 ├── awards.html           awards.log       filterable log (paper / service / teaching / impact)
 ├── service.html          service.yml      AIS role, organizing, track chairs, AE, reviewing, memberships
 ├── 404.html
+├── legal.html          .legal           imprint + privacy; hidden dotfile (press "." for ls -a), linked in the status bar
 ├── assets/
+│   ├── fonts/            self-hosted web fonts (no requests to Google)
 │   ├── css/style.css     design tokens (dark + light), all components
 │   ├── js/main.js        shell: explorer sidebar, tab bar, status bar, theme, ⌘K palette  ← edit NAV/PROFILES here
 │   ├── js/bib.js         dependency-free BibTeX parser / serializer / highlighter

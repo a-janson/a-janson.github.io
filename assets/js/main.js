@@ -17,7 +17,11 @@
     { id: "teaching", href: "teaching.html", file: "teaching", ext: "md", title: "Teaching" },
     { id: "awards", href: "awards.html", file: "awards", ext: "log", title: "Awards" },
     { id: "service", href: "service.html", file: "service", ext: "yml", title: "Service" },
+    // dotfile: hidden in the explorer until "ls -a" (press "." or use ⌘K); always linked from the status bar
+    { id: "legal", href: "legal.html", file: ".legal", ext: "", title: "Imprint & Privacy", hidden: true },
   ];
+  const fname = (n) => n.file + (n.ext === "dir" ? "/" : n.ext ? "." + n.ext : "");
+  const badge = (n) => (n.ext === "dir" ? "/" : n.ext ? "." + n.ext : "§");
 
   const PROFILES = [
     { label: "Google Scholar", href: `https://scholar.google.com/citations?user=${SITE.scholarId}` },
@@ -48,6 +52,13 @@
     root.setAttribute("data-theme", next);
     store.set("theme", next);
     toast(`theme → ${next}`);
+  }
+  // "ls -a": reveal dotfiles (.legal) in the explorer; remembered per browser
+  if (store.get("hidden") === "1") root.classList.add("show-hidden");
+  function toggleHidden() {
+    const on = root.classList.toggle("show-hidden");
+    store.set("hidden", on ? "1" : "0");
+    toast(on ? "$ ls -a  → hidden files shown" : "$ ls  → hidden files hidden");
   }
 
   /* ---------------- data (cached) ---------------- */
@@ -107,8 +118,9 @@
     const content = app.innerHTML;
 
     const tree = NAV.map((n) => `
-      <li><a href="${n.href}"${n.id === pageId ? ' aria-current="page"' : ""}>
-        <span>${n.file}</span><span class="ext ${n.ext}">${n.ext === "dir" ? "/" : "." + n.ext}</span></a></li>`).join("");
+      <li${n.hidden ? ' class="dotfile"' : ""}><a href="${n.href}"${n.id === pageId ? ' aria-current="page"' : ""}>
+        <span>${n.file}</span><span class="ext ${n.ext || "dot"}">${badge(n)}</span></a></li>`).join("");
+    if (page.hidden) root.classList.add("show-hidden");
     const profiles = PROFILES.map((p) => `<li><a href="${p.href}" target="_blank" rel="noopener"><span>${p.label}</span><span aria-hidden="true">↗</span></a></li>`).join("");
 
     app.outerHTML = `
@@ -129,7 +141,7 @@
       <div class="main">
         <header class="tabbar">
           <button class="btn sm menu-btn" type="button" id="menu-btn" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
-          <div class="tab"><span class="ext ${page.ext}">${page.ext === "dir" ? "/" : "." + page.ext}</span>${page.file}${page.ext === "dir" ? "/" : "." + page.ext}</div>
+          <div class="tab"><span class="ext ${page.ext || "dot"}">${badge(page)}</span>${fname(page)}</div>
           <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" title="Back to home">janson</a><span>›</span><span style="color:var(--fg)">${page.title}</span></nav>
           <span class="spacer"></span>
           <button class="btn sm palette-btn" type="button" id="palette-btn"><span aria-hidden="true">⌕</span><span class="lbl">Search site</span><kbd>⌘K</kbd></button>
@@ -144,6 +156,7 @@
       <span class="grow"></span>
       <span class="opt-hide">ORCID ${SITE.orcid}</span>
       <span class="opt-hide">UTF-8 · BibTeX</span>
+      <a class="sb-legal" href="legal.html" title="Imprint &amp; privacy">§ .legal</a>
     </footer>`;
 
     document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
@@ -177,7 +190,7 @@
        <figcaption>…</figcaption></figure>
      • shows a hatched placeholder naming the expected file
      • if the file exists, the real image replaces it (no HTML edit needed)
-     • data-yt="VIDEO_ID" [data-start="3923"] turns it into a click-to-load
+     • data-yt="VIDEO_ID" [data-start="3923"] [data-poster="local.jpg"] turns it into a click-to-load
        YouTube embed (privacy-friendly youtube-nocookie.com)                  */
   function hydrateMedia(scope) {
     (scope || document).querySelectorAll("figure.media[data-src], figure.media[data-yt]").forEach((fig) => {
@@ -200,7 +213,7 @@
         frame.innerHTML = `<div class="ph"><span class="ic" aria-hidden="true">${yt ? "▶" : "▣"}</span><code>${esc(label)}</code>${small ? "" : `<span class="dim">${hint}</span>`}</div>`;
       }
       const addPlay = () => { if (yt && !frame.querySelector(".play")) frame.insertAdjacentHTML("beforeend", `<button class="play" type="button" tabindex="-1">▶ play</button>`); };
-      const poster = src || (yt ? `https://i.ytimg.com/vi/${yt}/hqdefault.jpg` : "");
+      const poster = src || fig.dataset.poster || ""; // local poster only: nothing loads from YouTube before "play"
       if (poster) {
         const img = new Image();
         img.alt = fig.dataset.alt || "";
@@ -234,9 +247,10 @@
   /* ---------------- command palette ---------------- */
   let pal = null;
   function paletteItems() {
-    const items = NAV.map((n) => ({ g: "page", label: `${n.title}  —  ${n.file}${n.ext === "dir" ? "/" : "." + n.ext}`, run: () => (location.href = n.href) }));
+    const items = NAV.map((n) => ({ g: "page", label: `${n.title}  —  ${fname(n)}`, run: () => (location.href = n.href) }));
     items.push(
       { g: "action", label: "Toggle light / dark theme", run: toggleTheme },
+      { g: "action", label: "ls -a  —  show hidden files", run: toggleHidden },
       { g: "action", label: "Download all publications (.bib)", run: () => Data.bib().then((l) => download("janson.bib", window.Bib.serializeMany(l, { site: SITE.name }))) },
       { g: "action", label: "Copy e-mail (St.Gallen)", run: () => copy(mail("andreas.janson", "unisg.ch"), "Copied e-mail") },
     );
@@ -291,6 +305,7 @@
     const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement && document.activeElement.tagName);
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openPalette(); }
     else if (e.key === "/" && !typing && !pal) { e.preventDefault(); openPalette(); }
+    else if (e.key === "." && !typing && !pal && !e.metaKey && !e.ctrlKey && !e.altKey) toggleHidden();
   });
 
   window.Site = { SITE, Data, copy, download, toast, fmt, store, hydrateMedia };
