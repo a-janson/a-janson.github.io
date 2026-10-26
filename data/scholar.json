@@ -2,11 +2,11 @@
   "source": "google_scholar (serpapi)",
   "author_id": "9XM_AuIAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
-  "updated": "2026-10-22T13:05:31Z",
+  "updated": "2026-10-26T09:05:22Z",
   "since_year": 2021,
   "citations": {
-    "all": 5340,
-    "since": 4795
+    "all": 5364,
+    "since": 4819
   },
   "h_index": {
     "all": 35,
@@ -25,26 +25,26 @@
     "2020": 198,
     "2021": 275,
     "2022": 477,
-    "2023": 621,
+    "2023": 620,
     "2024": 834,
     "2025": 1219,
-    "2026": 1322
+    "2026": 1346
   },
   "publications": [
     {
       "title": "AI literacy and its implications for prompt engineering strategies",
       "year": 2024,
-      "citations": 844
+      "citations": 855
     },
     {
       "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs",
       "year": 2020,
-      "citations": 304
+      "citations": 305
     },
     {
       "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification",
       "year": 2023,
-      "citations": 277
+      "citations": 283
     },
     {
       "title": "Charting the evolution and future of conversational agents: A research agenda along five waves and new frontiers",
@@ -59,7 +59,7 @@
     {
       "title": "Two decades of game concepts in digital learning environments–A bibliometric study and research agenda",
       "year": 2021,
-      "citations": 176
+      "citations": 177
     },
     {
       "title": "Classifying smart personal assistants: an empirical cluster analysis",
@@ -79,7 +79,7 @@
     {
       "title": "What do you mean? A review on recovery strategies to overcome conversational breakdowns of conversational agents",
       "year": 2021,
-      "citations": 124
+      "citations": 125
     },
     {
       "title": "Understanding the design elements affecting user acceptance of intelligent agents: Past, present and future",
@@ -129,7 +129,7 @@
     {
       "title": "Lawfulness by design–development and evaluation of lawful design patterns to consider legal requirements",
       "year": 2024,
-      "citations": 62
+      "citations": 63
     },
     {
       "title": "Improving students’ argumentation skills using dynamic machine-learning–based modeling",
@@ -162,14 +162,14 @@
       "citations": 51
     },
     {
-      "title": "Flipping the Classroom–IT-unterstützte Lerneraktivierung zur Verbesserung des Lernerfolges einer universitären Massenlehrveranstaltung",
-      "year": 2015,
+      "title": "How to achieve ethical persuasive design: A review and theoretical propositions for information systems",
+      "year": 2022,
       "citations": 50
     },
     {
-      "title": "How to achieve ethical persuasive design: A review and theoretical propositions for information systems",
-      "year": 2022,
-      "citations": 49
+      "title": "Flipping the Classroom–IT-unterstützte Lerneraktivierung zur Verbesserung des Lernerfolges einer universitären Massenlehrveranstaltung",
+      "year": 2015,
+      "citations": 50
     },
     {
       "title": "Towards a holistic understanding of technology mediated learning services–a state-of-the-art analysis",
@@ -257,11 +257,6 @@
       "citations": 29
     },
     {
-      "title": "Unterstützung digitaler Bildungsprozesse durch interaktive gamifizierte Lernvideos–Wie innovative Lernvideos Motivation und Lernerfolg steigern können",
-      "year": 2021,
-      "citations": 26
-    },
-    {
       "title": "Leveraging Prompting Guides as Worked Examples for Advanced Prompt Engineering Strategies",
       "year": 2024,
       "citations": 25
@@ -287,6 +282,11 @@
       "citations": 24
     },
     {
+      "title": "Unterstützung digitaler Bildungsprozesse durch interaktive gamifizierte Lernvideos–Wie innovative Lernvideos Motivation und Lernerfolg steigern können",
+      "year": 2021,
+      "citations": 24
+    },
+    {
       "title": "Codifying interdisciplinary design knowledge through patterns–the case of smart personal assistants",
       "year": 2020,
       "citations": 24
@@ -300,6 +300,11 @@
       "title": "Designing for Conversational System Trustworthiness: The Impact of Model Transparency on Trust and Task Performance",
       "year": 2022,
       "citations": 21
+    },
+    {
+      "title": "Engaging students through interactive learning videos in higher education: developing a creation process and design patterns for interactive learning videos",
+      "year": 2024,
+      "citations": 20
     },
     {
       "title": "Special issue editorial: Adaptive and intelligent gamification design",
@@ -317,24 +322,19 @@
       "citations": 19
     },
     {
-      "title": "Engaging students through interactive learning videos in higher education: developing a creation process and design patterns for interactive learning videos",
-      "year": 2024,
-      "citations": 19
-    },
-    {
       "title": "DELEN–a process model for the systematic development of legitimate digital nudges",
       "year": 2021,
       "citations": 19
     },
     {
-      "title": "It is only for your own good, or is it? Ethical Considerations for Designing Ethically Conscious Persuasive Information Systems",
-      "year": 2021,
+      "title": "'I Will Follow You!'–How Recommendation Modality Impacts Processing Fluency and Purchase Intention",
+      "year": 2022,
       "citations": 18
     },
     {
-      "title": "'I Will Follow You!'–How Recommendation Modality Impacts Processing Fluency and Purchase Intention",
-      "year": 2022,
-      "citations": 17
+      "title": "It is only for your own good, or is it? Ethical Considerations for Designing Ethically Conscious Persuasive Information Systems",
+      "year": 2021,
+      "citations": 18
     },
     {
       "title": "Gamification of online training and its relation to engagement and problem-solving outcomes",
@@ -377,6 +377,11 @@
       "citations": 12
     },
     {
+      "title": "Making the default more legitimate–the role of autonomy and transparency for digital privacy nudges",
+      "year": 2026,
+      "citations": 11
+    },
+    {
       "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
       "year": 2024,
       "citations": 11
@@ -405,11 +410,6 @@
       "title": "When in Rome, do as the Romans do-Overcoming Culture Conflicts in Mobile Learning",
       "year": 2015,
       "citations": 11
-    },
-    {
-      "title": "Making the default more legitimate–the role of autonomy and transparency for digital privacy nudges",
-      "year": 2026,
-      "citations": 10
     },
     {
       "title": "Leveraging Learner Errors in Digital Argumentation Learning: How ALure Helps Students Learn from their Mistakes and Write Better Arguments",
@@ -627,6 +627,11 @@
       "citations": 2
     },
     {
+      "title": "Less is more or more is better? Comparing static and generative AI-based recovery for chatbot service breakdowns",
+      "year": 2025,
+      "citations": 2
+    },
+    {
       "title": "Meetings at Digital Workplaces–An Experimental Approach to Analyze Group Attachment and Organizational Commitment in Digital Worlds",
       "year": 2023,
       "citations": 2
@@ -675,11 +680,6 @@
       "title": "The Efficient Provision of Culture-Sensitive Services: A Modularization Approach",
       "year": 2015,
       "citations": 2
-    },
-    {
-      "title": "Less is more or more is better? Comparing static and generative AI-based recovery for chatbot service breakdowns",
-      "year": 2025,
-      "citations": 1
     },
     {
       "title": "Implementing Digital Responsibility through Information Systems Research: A Delphi Study of Objectives, Activities, and Challenges in IS Research",
@@ -1084,7 +1084,7 @@
   ],
   "openalex": {
     "id": "https://openalex.org/A5083020821",
-    "cited_by_count": 2583,
+    "cited_by_count": 2591,
     "works_count": 215,
     "h_index": 24,
     "i10_index": 50,
@@ -1096,14 +1096,14 @@
       "2017": 96,
       "2018": 87,
       "2019": 279,
-      "2020": 376,
+      "2020": 378,
       "2021": 401,
-      "2022": 316,
+      "2022": 317,
       "2023": 396,
-      "2024": 416,
+      "2024": 421,
       "2025": 40,
       "2026": 8
     },
-    "fetched": "2026-10-22T13:05:31Z"
+    "fetched": "2026-10-26T09:05:22Z"
   }
 }
