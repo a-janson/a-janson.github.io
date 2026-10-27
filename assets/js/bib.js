@@ -7,7 +7,7 @@
   "use strict";
 
   // Fields used only by the website; removed on export unless "keep site fields" is on.
-  const SITE_FIELDS = ["award", "selected", "pdf", "status", "summary", "slides", "code", "project", "topic", "image", "language"];
+  const SITE_FIELDS = ["award", "selected", "pdf", "status", "summary", "slides", "code", "project", "topic", "image", "language", "tags"];
   const FIELD_ORDER = ["author", "editor", "title", "journal", "booktitle", "series", "year", "month",
     "volume", "number", "pages", "articleno", "publisher", "address", "school", "institution",
     "edition", "doi", "url", "isbn", "issn", "note", "keywords", "abstract"];

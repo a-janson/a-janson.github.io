@@ -2,12 +2,18 @@
    • full-text search, type / year / award filters, sort by year or citations
    • per-entry BibTeX panel (copy · download · copy as text)
    • citation basket: pick entries across filters → export one .bib
+   • #tag filter on the research-theme hashtags (bib field "tags"; ?tag= in the URL)
    • per-paper citation counts matched from data/scholar.json
    Also exposes PubUI.mountSelected() for the home page.                    */
 (function () {
   "use strict";
   const B = window.Bib, S = window.Site;
   const ME = /^janson$/i;
+
+  // research themes, same order as the hashtag chips on the home page
+  const TAGS = ["privacy-by-design", "trust-in-ai", "digital-sovereignty", "digital-services", "value-co-creation",
+    "digital-learning", "design-science", "conversational-ai", "gamification", "digital-nudging"];
+  const tagsOf = (e) => (e.fields.tags || "").split(";").map((t) => t.trim()).filter(Boolean);
 
   const norm = (s) => B.latexToText(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
@@ -133,7 +139,8 @@
   function mountPage() {
     const root = document.getElementById("pub-root");
     if (!root) return;
-    const state = { q: "", type: "all", awards: false, sort: "year", from: "", basket: new Set() };
+    const urlTag = new URLSearchParams(location.search).get("tag");
+    const state = { q: "", type: "all", awards: false, sort: "year", from: "", tag: TAGS.includes(urlTag) ? urlTag : "", basket: new Set() };
     try { (JSON.parse(S.store.get("basket") || "[]") || []).forEach((k) => state.basket.add(k)); } catch (e) { /* ignore */ }
     const opts = () => ({ keepSiteFields: document.getElementById("opt-site").checked, latexEscape: document.getElementById("opt-latex").checked, site: S.SITE.name });
 
@@ -143,7 +150,7 @@
       [...state.basket].forEach((k) => { if (!byKey.has(k)) state.basket.delete(k); });
       const years = [...new Set(list.map((e) => e.fields.year).filter(Boolean))].sort((a, b) => b - a);
       const counts = list.reduce((m, e) => { const id = B.category(e).id; m[id] = (m[id] || 0) + 1; return m; }, {});
-      const hay = new Map(list.map((e) => [e.key, norm([e.fields.title, e.fields.author, e.fields.journal, e.fields.booktitle, e.fields.institution, e.fields.publisher, e.fields.topic, e.fields.project, e.fields.year, e.fields.award, e.fields.status, e.fields.note, e.key].join(" "))]));
+      const hay = new Map(list.map((e) => [e.key, norm([e.fields.title, e.fields.author, e.fields.journal, e.fields.booktitle, e.fields.institution, e.fields.publisher, e.fields.topic, e.fields.tags, e.fields.project, e.fields.year, e.fields.award, e.fields.status, e.fields.note, e.key].join(" "))]));
 
       // toolbar
       const types = [["all", "All", list.length], ["journal", "Journal"], ["conference", "Conference"], ["chapter", "Chapter"], ["book", "Book"], ["other", "Other"]]
@@ -151,6 +158,11 @@
       document.getElementById("type-seg").innerHTML = types.map(([id, label, n]) =>
         `<button type="button" data-type="${id}" aria-pressed="${id === state.type}">${label}<span class="n">${n != null ? n : counts[id]}</span></button>`).join("");
       document.getElementById("year-from").innerHTML = `<option value="">all years</option>` + years.map((y) => `<option value="${y}">≥ ${y}</option>`).join("");
+
+      const tagCounts = TAGS.map((t) => [t, list.filter((e) => tagsOf(e).includes(t)).length]);
+      const tagSeg = document.getElementById("tag-seg");
+      tagSeg.innerHTML = `<span class="lbl">themes</span>` + tagCounts.map(([t, n]) =>
+        `<button type="button" class="chip" data-tag="${t}" aria-pressed="${t === state.tag}">${t}<span class="n">${n}</span></button>`).join("");
 
       const listEl = document.getElementById("pub-list");
       wireList(listEl, byKey, opts, (key, on) => { on ? state.basket.add(key) : state.basket.delete(key); saveBasket(); });
@@ -160,6 +172,7 @@
         let out = list.filter((e) => {
           if (state.type !== "all" && B.category(e).id !== state.type) return false;
           if (state.awards && !e.fields.award) return false;
+          if (state.tag && !tagsOf(e).includes(state.tag)) return false;
           if (state.from && !e.fields.status && +(e.fields.year || 0) < +state.from) return false;
           const h = hay.get(e.key);
           return words.every((w) => h.includes(w));
@@ -181,7 +194,7 @@
         } else {
           listEl.innerHTML = `<ul class="pubs">${out.map((e) => entryHTML(e, ctx)).join("")}</ul>`;
         }
-        document.getElementById("result-line").textContent = `${out.length} of ${list.length} entries · ${out.filter((e) => e.fields.award).length} with awards`;
+        document.getElementById("result-line").textContent = `${out.length} of ${list.length} entries${state.tag ? ` · #${state.tag}` : ""} · ${out.filter((e) => e.fields.award).length} with awards`;
         document.getElementById("export-visible").innerHTML = `⤓ Export ${out.length} shown`;
         state.visible = out;
       }
@@ -197,6 +210,15 @@
       });
       const aw = document.getElementById("awards-only");
       aw.addEventListener("click", () => { state.awards = !state.awards; aw.setAttribute("aria-pressed", String(state.awards)); render(); });
+      tagSeg.addEventListener("click", (ev) => {
+        const b = ev.target.closest("button[data-tag]"); if (!b) return;
+        state.tag = state.tag === b.dataset.tag ? "" : b.dataset.tag;
+        tagSeg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.tag === state.tag)));
+        const u = new URL(location.href);
+        state.tag ? u.searchParams.set("tag", state.tag) : u.searchParams.delete("tag");
+        history.replaceState(null, "", u);
+        render();
+      });
       document.getElementById("year-from").addEventListener("change", (ev) => { state.from = ev.target.value; render(); });
       document.getElementById("sort").addEventListener("change", (ev) => { state.sort = ev.target.value; render(); });
       document.getElementById("export-visible").addEventListener("click", () => openDrawer(state.visible, "Shown entries"));

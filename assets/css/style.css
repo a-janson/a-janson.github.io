@@ -541,3 +541,12 @@ a.tag:hover { text-decoration: underline; text-underline-offset: 2px; }
 .legal-prose p, .legal-prose li { max-width: 72ch; }
 .statusbar .sb-legal { flex-shrink: 0; }
 .statusbar #sb-scholar { min-width: 0; overflow: hidden; text-overflow: ellipsis; display: block; }
+
+/* hashtag chips: links on the home page, toggle filter on the publications page */
+a.chip { text-decoration: none; transition: border-color .15s, background .15s; }
+a.chip:hover, .tag-filter .chip:hover { border-color: color-mix(in srgb, var(--accent) 60%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); }
+.tag-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; }
+.tag-filter .lbl { font: 500 .72rem var(--font-mono); color: var(--muted); margin-right: 4px; }
+.tag-filter .chip { cursor: pointer; font-size: .74rem; padding: 4px 9px; }
+.tag-filter .chip .n { color: var(--muted); margin-left: 5px; font-size: .68rem; }
+.tag-filter .chip[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel)); }
