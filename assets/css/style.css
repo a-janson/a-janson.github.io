@@ -551,3 +551,4 @@ a.chip:hover, .tag-filter .chip:hover { border-color: color-mix(in srgb, var(--a
 .tag-filter .chip .n { color: var(--muted); margin-left: 5px; font-size: .68rem; }
 .tag-filter .chip[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel)); }
 .log.no-yr li { grid-template-columns: 92px minmax(0,1fr); }
+@media (max-width: 520px) { .log.no-yr .lvl { grid-column: 1 / -1; } }
