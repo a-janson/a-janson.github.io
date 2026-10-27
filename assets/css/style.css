@@ -550,3 +550,4 @@ a.chip:hover, .tag-filter .chip:hover { border-color: color-mix(in srgb, var(--a
 .tag-filter .chip { cursor: pointer; font-size: .74rem; padding: 4px 9px; }
 .tag-filter .chip .n { color: var(--muted); margin-left: 5px; font-size: .68rem; }
 .tag-filter .chip[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, var(--panel)); }
+#tag-sel { max-width: 15rem; }

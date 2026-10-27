@@ -163,6 +163,9 @@
       const tagSeg = document.getElementById("tag-seg");
       tagSeg.innerHTML = `<span class="lbl">themes</span>` + tagCounts.map(([t, n]) =>
         `<button type="button" class="chip" data-tag="${t}" aria-pressed="${t === state.tag}">${t}<span class="n">${n}</span></button>`).join("");
+      const tagSel = document.getElementById("tag-sel");
+      tagSel.innerHTML = `<option value="">all themes</option>` + tagCounts.map(([t, n]) => `<option value="${t}">#${t} (${n})</option>`).join("");
+      tagSel.value = state.tag;
 
       const listEl = document.getElementById("pub-list");
       wireList(listEl, byKey, opts, (key, on) => { on ? state.basket.add(key) : state.basket.delete(key); saveBasket(); });
@@ -210,15 +213,21 @@
       });
       const aw = document.getElementById("awards-only");
       aw.addEventListener("click", () => { state.awards = !state.awards; aw.setAttribute("aria-pressed", String(state.awards)); render(); });
-      tagSeg.addEventListener("click", (ev) => {
-        const b = ev.target.closest("button[data-tag]"); if (!b) return;
-        state.tag = state.tag === b.dataset.tag ? "" : b.dataset.tag;
+      // chip row and dropdown set the same filter and stay in sync
+      function setTag(t) {
+        state.tag = t;
         tagSeg.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.tag === state.tag)));
+        tagSel.value = state.tag;
         const u = new URL(location.href);
         state.tag ? u.searchParams.set("tag", state.tag) : u.searchParams.delete("tag");
         history.replaceState(null, "", u);
         render();
+      }
+      tagSeg.addEventListener("click", (ev) => {
+        const b = ev.target.closest("button[data-tag]"); if (!b) return;
+        setTag(state.tag === b.dataset.tag ? "" : b.dataset.tag);
       });
+      tagSel.addEventListener("change", () => setTag(tagSel.value));
       document.getElementById("year-from").addEventListener("change", (ev) => { state.from = ev.target.value; render(); });
       document.getElementById("sort").addEventListener("change", (ev) => { state.sort = ev.target.value; render(); });
       document.getElementById("export-visible").addEventListener("click", () => openDrawer(state.visible, "Shown entries"));
