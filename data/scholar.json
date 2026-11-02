@@ -2,11 +2,11 @@
   "source": "google_scholar (serpapi)",
   "author_id": "9XM_AuIAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
-  "updated": "2026-10-26T09:05:22Z",
+  "updated": "2026-11-02T11:23:14Z",
   "since_year": 2021,
   "citations": {
-    "all": 5364,
-    "since": 4819
+    "all": 5393,
+    "since": 4848
   },
   "h_index": {
     "all": 35,
@@ -24,32 +24,32 @@
     "2019": 96,
     "2020": 198,
     "2021": 275,
-    "2022": 477,
+    "2022": 476,
     "2023": 620,
-    "2024": 834,
-    "2025": 1219,
-    "2026": 1346
+    "2024": 833,
+    "2025": 1222,
+    "2026": 1374
   },
   "publications": [
     {
       "title": "AI literacy and its implications for prompt engineering strategies",
       "year": 2024,
-      "citations": 855
+      "citations": 867
     },
     {
       "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs",
       "year": 2020,
-      "citations": 305
+      "citations": 307
     },
     {
       "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification",
       "year": 2023,
-      "citations": 283
+      "citations": 285
     },
     {
       "title": "Charting the evolution and future of conversational agents: A research agenda along five waves and new frontiers",
       "year": 2024,
-      "citations": 215
+      "citations": 214
     },
     {
       "title": "Value co-creation in smart services: a functional affordances perspective on smart personal assistants",
@@ -64,7 +64,7 @@
     {
       "title": "Classifying smart personal assistants: an empirical cluster analysis",
       "year": 2019,
-      "citations": 153
+      "citations": 155
     },
     {
       "title": "Female by default?–exploring the effect of voice assistant gender and pitch on trait and trust attribution",
@@ -74,7 +74,7 @@
     {
       "title": "Ladders for learning: is scaffolding the key to teaching problem-solving in technology-mediated learning contexts?",
       "year": 2020,
-      "citations": 148
+      "citations": 149
     },
     {
       "title": "What do you mean? A review on recovery strategies to overcome conversational breakdowns of conversational agents",
@@ -94,7 +94,7 @@
     {
       "title": "Enhancing argumentative writing with automated feedback and social comparison nudging",
       "year": 2022,
-      "citations": 112
+      "citations": 113
     },
     {
       "title": "The what and how of smart personal assistants: principles and application domains for IS research",
@@ -104,7 +104,7 @@
     {
       "title": "Process is king: Evaluating the performance of technology-mediated learning in vocational software training",
       "year": 2018,
-      "citations": 93
+      "citations": 94
     },
     {
       "title": "Gamifying online training in management education to support emotional engagement and problem-solving skills",
@@ -124,17 +124,17 @@
     {
       "title": "Towards a trust reliance paradox? exploring the gap between perceived trust in and reliance on algorithmic advice",
       "year": 2021,
-      "citations": 65
+      "citations": 66
     },
     {
       "title": "Lawfulness by design–development and evaluation of lawful design patterns to consider legal requirements",
       "year": 2024,
-      "citations": 63
+      "citations": 64
     },
     {
       "title": "Improving students’ argumentation skills using dynamic machine-learning–based modeling",
       "year": 2025,
-      "citations": 58
+      "citations": 59
     },
     {
       "title": "Adaptive and personalized gamification designs: Call for action and future research",
@@ -142,14 +142,14 @@
       "citations": 58
     },
     {
-      "title": "How data analytics competencies can foster business value–A systematic review and way forward",
-      "year": 2021,
-      "citations": 54
-    },
-    {
       "title": "The anatomy of user experience with conversational agents: a taxonomy and propositions of service clues",
       "year": 2020,
       "citations": 54
+    },
+    {
+      "title": "How data analytics competencies can foster business value–A systematic review and way forward",
+      "year": 2021,
+      "citations": 53
     },
     {
       "title": "Voice as a contemporary frontier of interaction design",
@@ -174,7 +174,7 @@
     {
       "title": "Towards a holistic understanding of technology mediated learning services–a state-of-the-art analysis",
       "year": 2014,
-      "citations": 47
+      "citations": 48
     },
     {
       "title": "How digital nudges influence consumers-experimental investigation in the context of retargeting",
@@ -189,7 +189,7 @@
     {
       "title": "The role of AI-based artifacts’ voice capabilities for agency attribution",
       "year": 2023,
-      "citations": 40
+      "citations": 41
     },
     {
       "title": "Level-up your learning–Introducing a framework for gamified educational conversational agents",
@@ -227,14 +227,14 @@
       "citations": 33
     },
     {
-      "title": "Flipping the IS classroom–Theory-driven design for large-scale lectures",
-      "year": 2014,
+      "title": "Promoting students’ motivation in language education with gamified pedagogical conversational agents",
+      "year": 2025,
       "citations": 32
     },
     {
-      "title": "Promoting students’ motivation in language education with gamified pedagogical conversational agents",
-      "year": 2025,
-      "citations": 31
+      "title": "Flipping the IS classroom–Theory-driven design for large-scale lectures",
+      "year": 2014,
+      "citations": 32
     },
     {
       "title": "Mechanisms of Common Ground in Human-Agent Interaction: A Systematic Review of Conversational Agent Research",
@@ -259,15 +259,15 @@
     {
       "title": "Leveraging Prompting Guides as Worked Examples for Advanced Prompt Engineering Strategies",
       "year": 2024,
-      "citations": 25
-    },
-    {
-      "title": "Exploring the state-of-the-art of persuasive design for smart personal assistants",
-      "year": 2021,
-      "citations": 25
+      "citations": 26
     },
     {
       "title": "The dark side of privacy nudging–an experimental study in the context of a digital work environment",
+      "year": 2021,
+      "citations": 26
+    },
+    {
+      "title": "Exploring the state-of-the-art of persuasive design for smart personal assistants",
       "year": 2021,
       "citations": 25
     },
@@ -302,11 +302,6 @@
       "citations": 21
     },
     {
-      "title": "Engaging students through interactive learning videos in higher education: developing a creation process and design patterns for interactive learning videos",
-      "year": 2024,
-      "citations": 20
-    },
-    {
       "title": "Special issue editorial: Adaptive and intelligent gamification design",
       "year": 2023,
       "citations": 20
@@ -319,6 +314,11 @@
     {
       "title": "Uncovering the mechanisms of common ground in human–agent interaction: review and future directions for conversational agent research",
       "year": 2026,
+      "citations": 19
+    },
+    {
+      "title": "Engaging students through interactive learning videos in higher education: developing a creation process and design patterns for interactive learning videos",
+      "year": 2024,
       "citations": 19
     },
     {
@@ -367,28 +367,28 @@
       "citations": 15
     },
     {
+      "title": "Common ground improves learning with conversational agents",
+      "year": 2026,
+      "citations": 13
+    },
+    {
       "title": "Worked Examples to Facilitate the Development of Prompt Engineering Skills",
       "year": 2024,
       "citations": 13
     },
     {
-      "title": "Common ground improves learning with conversational agents",
+      "title": "Making the default more legitimate–the role of autonomy and transparency for digital privacy nudges",
       "year": 2026,
       "citations": 12
     },
     {
-      "title": "Making the default more legitimate–the role of autonomy and transparency for digital privacy nudges",
-      "year": 2026,
-      "citations": 11
+      "title": "Measuring university students’ ability to recognize argument structures and fallacies",
+      "year": 2023,
+      "citations": 12
     },
     {
       "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
       "year": 2024,
-      "citations": 11
-    },
-    {
-      "title": "Measuring university students’ ability to recognize argument structures and fallacies",
-      "year": 2023,
       "citations": 11
     },
     {
@@ -1084,26 +1084,26 @@
   ],
   "openalex": {
     "id": "https://openalex.org/A5083020821",
-    "cited_by_count": 2591,
-    "works_count": 215,
+    "cited_by_count": 2601,
+    "works_count": 212,
     "h_index": 24,
-    "i10_index": 50,
+    "i10_index": 51,
     "counts_by_year": {
-      "2013": 8,
-      "2014": 101,
-      "2015": 27,
-      "2016": 32,
-      "2017": 96,
-      "2018": 87,
-      "2019": 279,
-      "2020": 378,
-      "2021": 401,
-      "2022": 317,
-      "2023": 396,
-      "2024": 421,
-      "2025": 40,
-      "2026": 8
+      "2013": 0,
+      "2014": 12,
+      "2015": 25,
+      "2016": 22,
+      "2017": 42,
+      "2018": 23,
+      "2019": 43,
+      "2020": 111,
+      "2021": 157,
+      "2022": 231,
+      "2023": 346,
+      "2024": 415,
+      "2025": 610,
+      "2026": 564
     },
-    "fetched": "2026-10-26T09:05:22Z"
+    "fetched": "2026-11-02T11:23:14Z"
   }
 }
