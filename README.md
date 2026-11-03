@@ -122,3 +122,17 @@ missing file (with the Google Site page it comes from) and every placeholder lin
 ## Keyboard
 
 `⌘K` / `Ctrl+K` / `/` — command palette (pages, papers, actions) · `Esc` closes.
+
+## Search engines and AI assistants
+
+`scripts/build_seo.py` (run automatically by `.github/workflows/build-seo.yml`) writes:
+
+- per-page `<title>`, description, canonical URL, Open Graph tags and JSON-LD
+  (Person/ProfilePage on the home page, a ScholarlyArticle list on the publications page).
+  Edit titles and descriptions in the `PAGES` table at the top of the script.
+- static HTML copies of the publication lists, so crawlers that do not run JavaScript
+  (most AI crawlers) still see every paper; the JavaScript replaces them on load.
+- `sitemap.xml`, `robots.txt` and `llms.txt`.
+
+One-time setup by the site owner: verify the site in Google Search Console and
+Bing Webmaster Tools and submit `https://a-janson.github.io/sitemap.xml`.

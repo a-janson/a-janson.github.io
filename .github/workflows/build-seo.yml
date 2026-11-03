@@ -1,0 +1,48 @@
+name: Build SEO files
+
+# Regenerates <head> metadata, JSON-LD, the static publication lists,
+# sitemap.xml, robots.txt and llms.txt (scripts/build_seo.py) whenever a page
+# or the bibliography changes, including edits made on the GitHub website.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "data/publications.bib"
+      - "scripts/build_seo.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-seo
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # git history gives the sitemap its lastmod dates
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build
+        run: python scripts/build_seo.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing to update."
+            exit 0
+          fi
+          git config user.name  "seo-bot"
+          git config user.email "seo-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(seo): rebuild metadata, sitemap and llms.txt"
+          git pull --rebase origin main
+          git push
