@@ -50,27 +50,27 @@ SUMMARY = ("Dr. Andreas Janson is a research group lead at the Institute of Info
 
 # page -> (title, description, breadcrumb name); None = not indexed
 PAGES = {
-    "index.html": ("Andreas Janson · Information Systems Researcher, University of St.Gallen",
-                   "Dr. Andreas Janson, research group lead at IWI-HSG, University of St.Gallen: privacy by design, "
-                   "trust in AI, digital sovereignty, conversational AI, digital learning and design science.",
+    "index.html": ("Dr. Andreas Janson · Research in Information Systems, University of St.Gallen",
+                   "Dr. Andreas Janson, research group lead at IWI-HSG, University of St.Gallen. Research on privacy by "
+                   "design, trust in AI, digital sovereignty, conversational AI, digital learning and design science.",
                    "Home"),
-    "publications.html": ("Publications · Andreas Janson",
+    "publications.html": ("Research Publications · Dr. Andreas Janson",
                           "All publications of Andreas Janson (University of St.Gallen) in ISR, JAIS, EJIS, ISJ, JIT, "
                           "AMLE and at ICIS, ECIS, HICSS, WI: searchable, filterable, with BibTeX export.",
                           "Publications"),
-    "projects.html": ("Research Projects & Grants · Andreas Janson",
+    "projects.html": ("Research Projects & Grants · Dr. Andreas Janson",
                       "Research projects and grants of Andreas Janson: Innosuisse flagship SCESC (HSG Impact Award "
                       "2026), SNSF, DFG and BMBF projects on AI, privacy, nudging and digital learning.",
                       "Projects"),
-    "teaching.html": ("Teaching · Andreas Janson",
+    "teaching.html": ("Teaching · Dr. Andreas Janson",
                       "Teaching of Andreas Janson at St.Gallen, Hamburg and Kassel: flipped classroom, courses, "
                       "AOM management education workshops and supervised theses.",
                       "Teaching"),
-    "awards.html": ("Awards · Andreas Janson",
+    "awards.html": ("Research Awards · Dr. Andreas Janson",
                     "Awards of Andreas Janson: AIS Best Conference Paper on Education 2024, DESRIST and HICSS best "
                     "papers, ICIS best theory paper runner-up, HSG Impact Award 2026.",
                     "Awards"),
-    "service.html": ("Academic Service · Andreas Janson",
+    "service.html": ("Academic Service · Dr. Andreas Janson",
                      "Academic service of Andreas Janson: track chair at ICIS, ECIS, WI and DESRIST, associate "
                      "editor, AIS Associate Vice President Education Curations, reviewing.",
                      "Service"),
@@ -192,6 +192,7 @@ def scholarly(e: dict) -> dict:
 def person() -> dict:
     return {
         "@type": "Person", "@id": BASE + "#person", "name": NAME, "honorificPrefix": "Dr.",
+        "alternateName": ["Dr. Andreas Janson", "Dr. Janson", "A. Janson"],
         "givenName": "Andreas", "familyName": "Janson", "url": BASE, "image": PORTRAIT,
         "jobTitle": "Research Group Lead", "description": SUMMARY,
         "worksFor": {"@type": "CollegeOrUniversity", "name": "University of St.Gallen", "url": "https://www.unisg.ch/",
@@ -211,7 +212,7 @@ def head_block(page: str, pubs: list[dict]) -> str:
         [] if page == "index.html" else [{"@type": "ListItem", "position": 2, "name": crumb, "item": url}])}]
     if page == "index.html":
         graph += [{"@type": "ProfilePage", "url": url, "name": title, "mainEntity": person()},
-                  {"@type": "WebSite", "url": BASE, "name": NAME}]
+                  {"@type": "WebSite", "url": BASE, "name": NAME, "alternateName": ["Dr. Andreas Janson", "Andreas Janson Research"]}]
     else:
         graph.append({"@type": "WebPage", "url": url, "name": title, "description": desc,
                       "about": {"@id": BASE + "#person"}, "isPartOf": {"@type": "WebSite", "url": BASE}})

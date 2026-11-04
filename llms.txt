@@ -6,7 +6,7 @@ ORCID: 0000-0003-3149-0340 · Contact: see https://a-janson.github.io/ (e-mail o
 
 ## Pages
 
-- [Home](https://a-janson.github.io/): Dr. Andreas Janson, research group lead at IWI-HSG, University of St.Gallen: privacy by design, trust in AI, digital sovereignty, conversational AI, digital learning and design science.
+- [Home](https://a-janson.github.io/): Dr. Andreas Janson, research group lead at IWI-HSG, University of St.Gallen. Research on privacy by design, trust in AI, digital sovereignty, conversational AI, digital learning and design science.
 - [Publications](https://a-janson.github.io/publications.html): All publications of Andreas Janson (University of St.Gallen) in ISR, JAIS, EJIS, ISJ, JIT, AMLE and at ICIS, ECIS, HICSS, WI: searchable, filterable, with BibTeX export.
 - [Projects](https://a-janson.github.io/projects.html): Research projects and grants of Andreas Janson: Innosuisse flagship SCESC (HSG Impact Award 2026), SNSF, DFG and BMBF projects on AI, privacy, nudging and digital learning.
 - [Teaching](https://a-janson.github.io/teaching.html): Teaching of Andreas Janson at St.Gallen, Hamburg and Kassel: flipped classroom, courses, AOM management education workshops and supervised theses.
