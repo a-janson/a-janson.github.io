@@ -22,7 +22,7 @@ ORCID: 0000-0003-3149-0340 · Contact: see https://a-janson.github.io/ (e-mail o
 - https://www.researchgate.net/profile/Andreas_Janson
 - https://alexandria.unisg.ch/entities/person/Andreas_Janson
 
-## Publications (178)
+## Publications (179)
 
 Full list with BibTeX: https://a-janson.github.io/publications.html · raw: https://a-janson.github.io/data/publications.bib
 
@@ -31,6 +31,7 @@ Full list with BibTeX: https://a-janson.github.io/publications.html · raw: http
 - Meywirth, S.; Janson, A.; Söllner, M. (forthcoming). Beyond Errors: Understanding Trust Violations in Emotional Support Interactions with Conversational AI. *Proceedings of the International Conference on Wirtschaftsinformatik (WI)*.
 - Reinhard, P.; Li, M. M.; Peters, C.; Janson, A.; Leimeister, J. M. (online first). GenAI-Infused Service Delivery: Micro-Level Augmentation Patterns at the Service Frontline. *Journal of Service Research*. https://doi.org/10.1177/10946705251414283
 - Schmidt, M.; Schöbel, S.; Janson, A.; Runde, L. (forthcoming). Purpose-Repair Fit and Trust Recovery in GenAI Chatbot User Interaction: Experimental Insights on Social and Informative Breakdown Strategies. *Proceedings of the 60th Hawaii International Conference on System Sciences (HICSS)*.
+- Grützner, L.; Elshan, E.; Janssen, A.; Janson, A.; Leimeister, J. M.; Breitner, M. H. (online first). Empowering Citizen Developers: Configurational Insights into Successful Conversational AI System Projects. *Information Systems and e-Business Management*. https://doi.org/10.1007/s10257-026-00747-4
 - Meywirth, S.; Janson, A.; Söllner, M. (online first). Do Human Trust Models Transfer to AI? A Necessary Condition Analysis of Interpersonal Trust Antecedents in Large Language Model-Based Coaching. *Behaviour & Information Technology*. https://doi.org/10.1080/0144929X.2026.2676746
 - Schadl, A.; Li, M. M.; Janson, A.; Schäfer, B. (forthcoming). Understanding AI's Impact on Business Value Creation. *Proceedings of the International Conference on Wirtschaftsinformatik (WI)*.
 - Klee, S.; Janson, A. (online first). Investigating Relevant Data in Automotive Procurement Departments: External Shocks as Transparency Creator for Data Deficits in Decision-Making. *Information Systems Frontiers*. https://doi.org/10.1007/s10796-023-10444-z
