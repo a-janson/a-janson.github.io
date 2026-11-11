@@ -22,12 +22,13 @@ ORCID: 0000-0003-3149-0340 · Contact: see https://a-janson.github.io/ (e-mail o
 - https://www.researchgate.net/profile/Andreas_Janson
 - https://alexandria.unisg.ch/entities/person/Andreas_Janson
 
-## Publications (179)
+## Publications (180)
 
 Full list with BibTeX: https://a-janson.github.io/publications.html · raw: https://a-janson.github.io/data/publications.bib
 
 - Janson, A. (forthcoming). Sovereign by Design? A Configurational Study of SME Cloud Transformation. *International Conference on Information Systems (ICIS), TREO Talk*.
 - Klee, S.; Janson, A.; Leimeister, J. M. (online first). Data-Driven Procurement for Managing Crises: Lessons from a European Automotive Manufacturer. *Information Systems Journal*. https://doi.org/10.1111/isj.70063
+- Kozachek, D.; Göldi, A.; Janson, A.; Li, M. M.; Leimeister, J. M. (forthcoming). Orchestrating Scaffolding AI Agents: How Delivery Order Shapes Learning in Problem-Solving Tasks. *Computers & Education*.
 - Meywirth, S.; Janson, A.; Söllner, M. (forthcoming). Beyond Errors: Understanding Trust Violations in Emotional Support Interactions with Conversational AI. *Proceedings of the International Conference on Wirtschaftsinformatik (WI)*.
 - Reinhard, P.; Li, M. M.; Peters, C.; Janson, A.; Leimeister, J. M. (online first). GenAI-Infused Service Delivery: Micro-Level Augmentation Patterns at the Service Frontline. *Journal of Service Research*. https://doi.org/10.1177/10946705251414283
 - Schmidt, M.; Schöbel, S.; Janson, A.; Runde, L. (forthcoming). Purpose-Repair Fit and Trust Recovery in GenAI Chatbot User Interaction: Experimental Insights on Social and Informative Breakdown Strategies. *Proceedings of the 60th Hawaii International Conference on System Sciences (HICSS)*.
