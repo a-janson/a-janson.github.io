@@ -26,7 +26,7 @@ ORCID: 0000-0003-3149-0340 · Contact: see https://a-janson.github.io/ (e-mail o
 
 Full list with BibTeX: https://a-janson.github.io/publications.html · raw: https://a-janson.github.io/data/publications.bib
 
-- Janson, A. (forthcoming). Sovereign by Design? A Configurational Study of SME Cloud Transformation. *International Conference on Information Systems (ICIS), TREO Talk*.
+- Janson, A. (forthcoming). Sovereign by Design? A Configurational Study of SME Cloud Transformation. *International Conference on Information Systems (ICIS), TREO Talk*. https://aisel.aisnet.org/treos_icis2026/149/
 - Klee, S.; Janson, A.; Leimeister, J. M. (online first). Data-Driven Procurement for Managing Crises: Lessons from a European Automotive Manufacturer. *Information Systems Journal*. https://doi.org/10.1111/isj.70063
 - Kozachek, D.; Göldi, A.; Janson, A.; Li, M. M.; Leimeister, J. M. (forthcoming). Orchestrating Scaffolding AI Agents: How Delivery Order Shapes Learning in Problem-Solving Tasks. *Computers & Education*.
 - Meywirth, S.; Janson, A.; Söllner, M. (forthcoming). Beyond Errors: Understanding Trust Violations in Emotional Support Interactions with Conversational AI. *Proceedings of the International Conference on Wirtschaftsinformatik (WI)*.
