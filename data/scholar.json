@@ -2,11 +2,11 @@
   "source": "google_scholar (serpapi)",
   "author_id": "9XM_AuIAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
-  "updated": "2026-11-09T11:45:39Z",
+  "updated": "2026-11-16T11:38:56Z",
   "since_year": 2021,
   "citations": {
-    "all": 5451,
-    "since": 4904
+    "all": 5482,
+    "since": 4935
   },
   "h_index": {
     "all": 35,
@@ -23,33 +23,33 @@
     "2018": 73,
     "2019": 97,
     "2020": 199,
-    "2021": 275,
-    "2022": 477,
+    "2021": 276,
+    "2022": 476,
     "2023": 622,
-    "2024": 831,
-    "2025": 1221,
-    "2026": 1430
+    "2024": 834,
+    "2025": 1222,
+    "2026": 1456
   },
   "publications": [
     {
       "title": "AI literacy and its implications for prompt engineering strategies",
       "year": 2024,
-      "citations": 893
+      "citations": 904
     },
     {
       "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs",
       "year": 2020,
-      "citations": 308
+      "citations": 309
     },
     {
       "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification",
       "year": 2023,
-      "citations": 293
+      "citations": 295
     },
     {
       "title": "Charting the evolution and future of conversational agents: A research agenda along five waves and new frontiers",
       "year": 2024,
-      "citations": 215
+      "citations": 217
     },
     {
       "title": "Value co-creation in smart services: a functional affordances perspective on smart personal assistants",
@@ -84,7 +84,7 @@
     {
       "title": "Understanding the design elements affecting user acceptance of intelligent agents: Past, present and future",
       "year": 2022,
-      "citations": 119
+      "citations": 118
     },
     {
       "title": "A research agenda for the why, what, and how of gamification designs: Outcomes of an ECIS 2019 panel",
@@ -94,12 +94,12 @@
     {
       "title": "Enhancing argumentative writing with automated feedback and social comparison nudging",
       "year": 2022,
-      "citations": 113
+      "citations": 115
     },
     {
       "title": "The what and how of smart personal assistants: principles and application domains for IS research",
       "year": 2018,
-      "citations": 108
+      "citations": 109
     },
     {
       "title": "Process is king: Evaluating the performance of technology-mediated learning in vocational software training",
@@ -109,7 +109,7 @@
     {
       "title": "Gamifying online training in management education to support emotional engagement and problem-solving skills",
       "year": 2023,
-      "citations": 82
+      "citations": 85
     },
     {
       "title": "Individual appropriation of learning management systems—antecedents and consequences",
@@ -119,12 +119,12 @@
     {
       "title": "A review of the empirical literature on conversational agents and future research directions",
       "year": 2020,
-      "citations": 69
+      "citations": 70
     },
     {
       "title": "Towards a trust reliance paradox? exploring the gap between perceived trust in and reliance on algorithmic advice",
       "year": 2021,
-      "citations": 66
+      "citations": 67
     },
     {
       "title": "Lawfulness by design–development and evaluation of lawful design patterns to consider legal requirements",
@@ -144,7 +144,7 @@
     {
       "title": "The anatomy of user experience with conversational agents: a taxonomy and propositions of service clues",
       "year": 2020,
-      "citations": 54
+      "citations": 55
     },
     {
       "title": "How data analytics competencies can foster business value–A systematic review and way forward",
@@ -182,14 +182,14 @@
       "citations": 44
     },
     {
-      "title": "A configurational view on avatar design–the role of emotional attachment, satisfaction, and cognitive load in digital learning",
-      "year": 2019,
+      "title": "The role of AI-based artifacts’ voice capabilities for agency attribution",
+      "year": 2023,
       "citations": 42
     },
     {
-      "title": "The role of AI-based artifacts’ voice capabilities for agency attribution",
-      "year": 2023,
-      "citations": 41
+      "title": "A configurational view on avatar design–the role of emotional attachment, satisfaction, and cognitive load in digital learning",
+      "year": 2019,
+      "citations": 42
     },
     {
       "title": "Level-up your learning–Introducing a framework for gamified educational conversational agents",
@@ -217,19 +217,24 @@
       "citations": 35
     },
     {
-      "title": "Designing a Co-creation System for the Development of Work-process-related Learning Material in Manufacturing: Co-Creation of work-process-related learning material",
-      "year": 2023,
-      "citations": 34
-    },
-    {
       "title": "The influence of AI-based chatbots and their design on users’ trust and information sharing in online loan applications",
       "year": 2021,
+      "citations": 35
+    },
+    {
+      "title": "Designing a Co-creation System for the Development of Work-process-related Learning Material in Manufacturing: Co-Creation of work-process-related learning material",
+      "year": 2023,
       "citations": 34
     },
     {
       "title": "Vocational training with microlearning—how low-immersive 360-degree learning environments support work-process-integrated learning",
       "year": 2022,
       "citations": 33
+    },
+    {
+      "title": "Improving students argumentation learning with adaptive self-evaluation nudging",
+      "year": 2022,
+      "citations": 32
     },
     {
       "title": "Redesigning university large scale lectures: How to activate the learner",
@@ -247,11 +252,6 @@
       "citations": 31
     },
     {
-      "title": "Improving students argumentation learning with adaptive self-evaluation nudging",
-      "year": 2022,
-      "citations": 31
-    },
-    {
       "title": "Examining the effect of different measurements of learning success in technology-mediated learning research",
       "year": 2014,
       "citations": 29
@@ -259,12 +259,17 @@
     {
       "title": "Leveraging Prompting Guides as Worked Examples for Advanced Prompt Engineering Strategies",
       "year": 2024,
-      "citations": 26
+      "citations": 27
     },
     {
       "title": "The dark side of privacy nudging–an experimental study in the context of a digital work environment",
       "year": 2021,
       "citations": 26
+    },
+    {
+      "title": "Designing pedagogical conversational agents for achieving common ground",
+      "year": 2023,
+      "citations": 25
     },
     {
       "title": "Unterstützung digitaler Bildungsprozesse durch interaktive gamifizierte Lernvideos–Wie innovative Lernvideos Motivation und Lernerfolg steigern können",
@@ -280,11 +285,6 @@
       "title": "Der Weg zur effizienten Bereitstellung kultursensitiver Dienstleistungen–erste Schritte mittels systematischer Modularisierung",
       "year": 2014,
       "citations": 25
-    },
-    {
-      "title": "Designing pedagogical conversational agents for achieving common ground",
-      "year": 2023,
-      "citations": 24
     },
     {
       "title": "Codifying interdisciplinary design knowledge through patterns–the case of smart personal assistants",
@@ -337,6 +337,11 @@
       "citations": 18
     },
     {
+      "title": "The role of design patterns in the development and legal assessment of lawful technologies.",
+      "year": 2022,
+      "citations": 17
+    },
+    {
       "title": "Gamification of online training and its relation to engagement and problem-solving outcomes",
       "year": 2019,
       "citations": 17
@@ -349,11 +354,6 @@
     {
       "title": "Engaging minds–how gamified chatbots can support and motivate learners in digital education",
       "year": 2024,
-      "citations": 16
-    },
-    {
-      "title": "The role of design patterns in the development and legal assessment of lawful technologies.",
-      "year": 2022,
       "citations": 16
     },
     {
@@ -389,7 +389,7 @@
     {
       "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
       "year": 2024,
-      "citations": 11
+      "citations": 12
     },
     {
       "title": "Sharing Design Knowledge Through Codification in Interdisciplinary DSR Collaborations",
@@ -1094,8 +1094,8 @@
   ],
   "openalex": {
     "id": "https://openalex.org/A5083020821",
-    "cited_by_count": 3139,
-    "works_count": 204,
+    "cited_by_count": 3192,
+    "works_count": 206,
     "h_index": 25,
     "i10_index": 56,
     "counts_by_year": {
@@ -1107,13 +1107,13 @@
       "2018": 24,
       "2019": 45,
       "2020": 104,
-      "2021": 162,
+      "2021": 163,
       "2022": 241,
-      "2023": 368,
-      "2024": 495,
-      "2025": 779,
-      "2026": 817
+      "2023": 370,
+      "2024": 501,
+      "2025": 790,
+      "2026": 850
     },
-    "fetched": "2026-11-09T11:45:39Z"
+    "fetched": "2026-11-16T11:38:56Z"
   }
 }
