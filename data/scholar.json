@@ -2,19 +2,19 @@
   "source": "google_scholar (serpapi)",
   "author_id": "9XM_AuIAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=9XM_AuIAAAAJ",
-  "updated": "2026-11-16T11:38:56Z",
+  "updated": "2026-11-23T13:05:36Z",
   "since_year": 2021,
   "citations": {
-    "all": 5482,
-    "since": 4935
+    "all": 5513,
+    "since": 4967
   },
   "h_index": {
-    "all": 35,
+    "all": 36,
     "since": 34
   },
   "i10_index": {
-    "all": 79,
-    "since": 70
+    "all": 80,
+    "since": 71
   },
   "cites_per_year": {
     "2015": 40,
@@ -23,33 +23,33 @@
     "2018": 73,
     "2019": 97,
     "2020": 199,
-    "2021": 276,
-    "2022": 476,
+    "2021": 275,
+    "2022": 477,
     "2023": 622,
-    "2024": 834,
-    "2025": 1222,
-    "2026": 1456
+    "2024": 835,
+    "2025": 1223,
+    "2026": 1484
   },
   "publications": [
     {
       "title": "AI literacy and its implications for prompt engineering strategies",
       "year": 2024,
-      "citations": 904
+      "citations": 912
     },
     {
       "title": "Capturing the complexity of gamification elements: a holistic approach for analysing existing and deriving novel gamification designs",
       "year": 2020,
-      "citations": 309
+      "citations": 310
     },
     {
       "title": "How to leverage anthropomorphism for chatbot service interfaces: The interplay of communication style and personification",
       "year": 2023,
-      "citations": 295
+      "citations": 300
     },
     {
       "title": "Charting the evolution and future of conversational agents: A research agenda along five waves and new frontiers",
       "year": 2024,
-      "citations": 217
+      "citations": 216
     },
     {
       "title": "Value co-creation in smart services: a functional affordances perspective on smart personal assistants",
@@ -64,7 +64,7 @@
     {
       "title": "Female by default?–exploring the effect of voice assistant gender and pitch on trait and trust attribution",
       "year": 2021,
-      "citations": 155
+      "citations": 156
     },
     {
       "title": "Classifying smart personal assistants: an empirical cluster analysis",
@@ -74,12 +74,12 @@
     {
       "title": "Ladders for learning: is scaffolding the key to teaching problem-solving in technology-mediated learning contexts?",
       "year": 2020,
-      "citations": 150
+      "citations": 151
     },
     {
       "title": "What do you mean? A review on recovery strategies to overcome conversational breakdowns of conversational agents",
       "year": 2021,
-      "citations": 125
+      "citations": 127
     },
     {
       "title": "Understanding the design elements affecting user acceptance of intelligent agents: Past, present and future",
@@ -94,7 +94,7 @@
     {
       "title": "Enhancing argumentative writing with automated feedback and social comparison nudging",
       "year": 2022,
-      "citations": 115
+      "citations": 116
     },
     {
       "title": "The what and how of smart personal assistants: principles and application domains for IS research",
@@ -119,22 +119,22 @@
     {
       "title": "A review of the empirical literature on conversational agents and future research directions",
       "year": 2020,
-      "citations": 70
+      "citations": 71
     },
     {
       "title": "Towards a trust reliance paradox? exploring the gap between perceived trust in and reliance on algorithmic advice",
       "year": 2021,
-      "citations": 67
+      "citations": 69
     },
     {
       "title": "Lawfulness by design–development and evaluation of lawful design patterns to consider legal requirements",
       "year": 2024,
-      "citations": 64
+      "citations": 65
     },
     {
       "title": "Improving students’ argumentation skills using dynamic machine-learning–based modeling",
       "year": 2025,
-      "citations": 59
+      "citations": 60
     },
     {
       "title": "Adaptive and personalized gamification designs: Call for action and future research",
@@ -149,16 +149,16 @@
     {
       "title": "How data analytics competencies can foster business value–A systematic review and way forward",
       "year": 2021,
+      "citations": 54
+    },
+    {
+      "title": "Is it all about having fun?-Developing a taxonomy to gamify information systems",
+      "year": 2018,
       "citations": 53
     },
     {
       "title": "Voice as a contemporary frontier of interaction design",
       "year": 2021,
-      "citations": 52
-    },
-    {
-      "title": "Is it all about having fun?-Developing a taxonomy to gamify information systems",
-      "year": 2018,
       "citations": 52
     },
     {
@@ -202,14 +202,14 @@
       "citations": 38
     },
     {
-      "title": "It's about understanding each other's culture–improving the outcomes of mobile learning by avoiding culture conflicts",
-      "year": 2016,
+      "title": "Promoting students’ motivation in language education with gamified pedagogical conversational agents",
+      "year": 2025,
       "citations": 36
     },
     {
-      "title": "Promoting students’ motivation in language education with gamified pedagogical conversational agents",
-      "year": 2025,
-      "citations": 35
+      "title": "It's about understanding each other's culture–improving the outcomes of mobile learning by avoiding culture conflicts",
+      "year": 2016,
+      "citations": 36
     },
     {
       "title": "Designing for Digital Wellbeing on a Smartphone: Co-creation of Digital Nudges to Mitigate Instagram Overuse",
@@ -372,6 +372,11 @@
       "citations": 13
     },
     {
+      "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
+      "year": 2024,
+      "citations": 13
+    },
+    {
       "title": "Worked Examples to Facilitate the Development of Prompt Engineering Skills",
       "year": 2024,
       "citations": 13
@@ -387,9 +392,9 @@
       "citations": 12
     },
     {
-      "title": "Shared digital artifacts–Co-creators as beneficiaries in microlearning development",
-      "year": 2024,
-      "citations": 12
+      "title": "Leveraging Learner Errors in Digital Argumentation Learning: How ALure Helps Students Learn from their Mistakes and Write Better Arguments",
+      "year": 2025,
+      "citations": 11
     },
     {
       "title": "Sharing Design Knowledge Through Codification in Interdisciplinary DSR Collaborations",
@@ -412,8 +417,8 @@
       "citations": 11
     },
     {
-      "title": "Leveraging Learner Errors in Digital Argumentation Learning: How ALure Helps Students Learn from their Mistakes and Write Better Arguments",
-      "year": 2025,
+      "title": "GenAI-infused service delivery: Micro-level augmentation patterns at the service frontline",
+      "year": 2026,
       "citations": 10
     },
     {
@@ -425,11 +430,6 @@
       "title": "Does culture matter? A qualitative and comparative study on eLearning in Germany and China",
       "year": 2014,
       "citations": 10
-    },
-    {
-      "title": "GenAI-infused service delivery: Micro-level augmentation patterns at the service frontline",
-      "year": 2026,
-      "citations": 9
     },
     {
       "title": "Disentangling the Influence of Mobile Learning Usability and Its Determinants–PLS-SEM and Importance-Performance Investigation",
@@ -682,6 +682,16 @@
       "citations": 2
     },
     {
+      "title": "Cognitive and Motivational Factors of Argument Evaluation",
+      "year": 2026,
+      "citations": 1
+    },
+    {
+      "title": "Orchestrating Scaffolding AI Agents: Design Principles for Mechanism-Specific Learner Support",
+      "year": 2026,
+      "citations": 1
+    },
+    {
       "title": "Implementing Digital Responsibility through Information Systems Research: A Delphi Study of Objectives, Activities, and Challenges in IS Research",
       "year": 2023,
       "citations": 1
@@ -767,6 +777,11 @@
       "citations": 1
     },
     {
+      "title": "Orchestrating scaffolding AI agents: How delivery order shapes learning in problem-solving tasks",
+      "year": 2026,
+      "citations": 0
+    },
+    {
       "title": "Empowering citizen developers: configurational insights into successful conversational AI system projects",
       "year": 2026,
       "citations": 0
@@ -777,17 +792,7 @@
       "citations": 0
     },
     {
-      "title": "Cognitive and Motivational Factors of Argument Evaluation",
-      "year": 2026,
-      "citations": 0
-    },
-    {
       "title": "Fachliche und überfachliche Kompetenzen durch soziotechnisches Design von Systemen hybrider Intelligenz flexibel und individuell fördern; Projektergebnisse des Vorhabens Komp …",
-      "year": 2026,
-      "citations": 0
-    },
-    {
-      "title": "Orchestrating Scaffolding AI Agents: Design Principles for Mechanism-Specific Learner Support",
       "year": 2026,
       "citations": 0
     },
@@ -977,11 +982,6 @@
       "citations": 0
     },
     {
-      "title": "Artificial Intelligence Literacy and Workforce Readiness in Emerging Economies",
-      "year": 2019,
-      "citations": 0
-    },
-    {
       "title": "Nutzung von interaktiven Videos zur Entwicklung von Arbeitsprozessorientierung in der Aus-und Weiterbildung–Erkenntnisse aus dem Projekt KoLeArn",
       "year": 2019,
       "citations": 0
@@ -1094,26 +1094,26 @@
   ],
   "openalex": {
     "id": "https://openalex.org/A5083020821",
-    "cited_by_count": 3192,
-    "works_count": 206,
-    "h_index": 25,
-    "i10_index": 56,
+    "cited_by_count": 4098,
+    "works_count": 207,
+    "h_index": 30,
+    "i10_index": 70,
     "counts_by_year": {
       "2013": 0,
-      "2014": 13,
-      "2015": 25,
-      "2016": 22,
-      "2017": 44,
-      "2018": 24,
-      "2019": 45,
-      "2020": 104,
-      "2021": 163,
-      "2022": 241,
-      "2023": 370,
-      "2024": 501,
-      "2025": 790,
-      "2026": 850
+      "2014": 21,
+      "2015": 33,
+      "2016": 24,
+      "2017": 47,
+      "2018": 32,
+      "2019": 56,
+      "2020": 124,
+      "2021": 207,
+      "2022": 299,
+      "2023": 455,
+      "2024": 630,
+      "2025": 996,
+      "2026": 1174
     },
-    "fetched": "2026-11-16T11:38:56Z"
+    "fetched": "2026-11-23T13:05:36Z"
   }
 }
